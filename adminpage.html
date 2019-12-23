@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Page</title>
+</head>
+<body>
+	<h1>Admin Page</h1>
+<form method="post" action="adminpage.php">
+	<ul>
+		<li><a href="">Login Page</a></li>
+		<li><a href="">Home</a></li>
+		<li><a href="">Book My T-shirt</a></li>
+		<li><a href="">Contact Details</a></li>
+	</ul>
+	<table>
+		<tr>
+			<td>Upload an image of the front view of the T-shirt here:</td>
+			<td><input type="file" id="tfront" required></td>
+		</tr>
+		<tr>
+			<td>Upload an image of the back view of the T-shirt here:</td>
+			<td><input type="file" id="tback" required></td>
+		</tr>
+		<tr>
+			<td>Upload an image of the side view of the T-shirt here:</td>
+			<td><input type="file" id="tside" required></td>
+		</tr>
+		<tr>
+			<td>Event/Theme:</td>
+			<td><input type="text" id="theme" required></td>
+		</tr>
+		<tr>
+			<td>Available Colours:</td>
+			<td><input type="color" id="colour1" required><input type="color" id="colour2"><input type="color" id="colour3"><input type="color" id="colour4">
+			</td>
+		</tr>
+		<tr>
+			<td>Available Materials:</td>
+			<td>
+				<select id="materials" required>
+					<option></option>
+					<option>Synthetic materials</option>
+					<option>Cotton</option>
+					<option>Cellulosic fibres/viscose</option>
+					<option>Wool</option>
+					<option>Silk</option>
+					<option>Leather</option>
+					<option>Bast fibres</option>
+					<option>Experimental fabrics</option>
+					<option>Notions and hardware</option>
+					<option>Other</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Description:</td>
+			<td><input type="text" id="description"></td>
+		</tr>
+		<tr>
+			<td>Price:</td>
+			<td><input type="text" id="price" required></td>
+		</tr>
+		<tr>
+			<td>Contact number:</td>
+			<td><input type="tel" minlength="10" maxlength="10" id="telephone" required></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="reset" name="reset"><input type="submit" name="submit"></td>
+		</tr>
+	</table>
+	
+</form>
+</body>
+</html>
