@@ -15,7 +15,7 @@
     </table>
     </div>
     <center>
-<form method="post" action="adminpage.php" enctype="multipart/form-data">
+<form method="post" action="adminpage.php">
 
 	<table class="admin_content">
 		<tr>
@@ -30,7 +30,7 @@
 		
 		<tr>
 			<td>Available Colours:</td>
-			<td><input type="color" id="color1" required><input type="color" id="color2"><input type="color" id="color3"><input type="color" id="color4">
+			<td><input type="color" id="color1" name="color1" required><input type="color" id="color2" name="color2"><input type="color" id="color3" name="color3"><input type="color" id="color4" name="color4">
 			</td>
 		</tr>
 
@@ -39,7 +39,7 @@
 		<tr>
 			<td>Available Materials:</td>
 			<td>
-				<select id="materials" required>
+				<select name="materials" required>
 					<option></option>
 					<option>Synthetic materials</option>
 					<option>Cotton</option>
@@ -76,7 +76,7 @@
 			<td><input type="file" name="tback" id="tside" ></td>
 		</tr>
 		<tr>
-			<td colspan="2"><center><input type="reset" class="reset"><input type="submit" class="submit"></center></td>
+			<td colspan="2"><center><input type="reset" name="reset" value="reset" class="reset"><input type="submit" name="submit" value="submit" class="submit"></center></td>
 		</tr>
 
 		</table>
