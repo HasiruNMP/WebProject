@@ -198,6 +198,40 @@ h1{
 	padding-left: 50px;
 }
 
+/*admin content*/
+.admin_content{
+	color: white;
+	margin-top: 50px;
+	border-spacing: 20px;
+	margin-bottom: 50px;
+	background-color:grey;
+	padding-left: 50px;
+	padding-top: 25px;
+
+		
+
+
+}
+
+.reset{
+	width: 75px;
+	height: 25px;
+	margin-right: 10px;
+	background-color: red;
+	color: white;
+	border: 0px;
+
+}
+
+.submit{
+	width: 75px;
+	height: 25px;
+	background-color: green;
+	color: white;
+	border: 0px;
+}
+}
+
 
 
 
