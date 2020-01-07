@@ -119,8 +119,8 @@
 
 
 	<tr>
-		<td><input type="submit" value="Order Now" name="order"> </td><td> <input type="reset" value="Reset" name="reset"> 
-		<a href="../Size chart/checksize.html"><input type="button" value="Check Size Chart" name="checks"></a></td>
+		<td><input class="button2" type="submit" value="Order Now" name="order"> </td><td> <input class="button2" type="reset" value="Reset" name="reset"> 
+		<a href="../Size chart/checksize.html"><input class="button2" type="button" value="Check Size Chart" name="checks"></a></td>
 	</tr>
 </form>
 </table>
