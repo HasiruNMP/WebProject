@@ -8,5 +8,5 @@ function home()
   	}
   	function logout() 
 	{
-  		window.open("login.html");
+  		window.open("index.html");
   	}
