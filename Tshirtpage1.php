@@ -90,7 +90,7 @@
 	<tr>
 		<td>Color: </td> 
 		<td class="tdetails"> <select name="color">
-			<option> </option>
+			<option>-Select- </option>
 			<option name="color1" style="background:<?php echo $row["Color1"];?>;color:<?php echo $row["Color1"];?>"> <?php echo $row["Color1"];?></option>
 			<option name="color2" style="background:<?php echo $row["Color2"];?>;color:<?php echo $row["Color2"];?>"> <?php echo $row["Color2"];?></option>
 			<option name="color3" style="background:<?php echo $row["Color3"];?>;color:<?php echo $row["Color3"];?>"> <?php echo $row["Color3"];?></option>
@@ -103,7 +103,7 @@
 	<tr>
 		<td>Size: </td> 
 		<td class="tdetails"> <select name="size">
-			<option> </option>
+			<option>-Select- </option>
 			<option name="size1">S </option>
 			<option name="size2">M</option>
 			<option name="size2">L</option>
