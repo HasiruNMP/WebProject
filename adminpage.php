@@ -26,7 +26,7 @@ $db=mysqli_select_db($connection,"nsbmtshirts"); //selecting the database
 if(isset($_REQUEST["submit"]))
 {
 
-$query="INSERT INTO tshirt_details (Theme, prodID, Material, Color1, Color2, Color3, Color4, Prices, ContactNO)
+$query="INSERT INTO tshirts (Theme, prodID, Material, Color1, Color2, Color3, Color4, Prices, ContactNO)
  VALUES ('$theme', '$ProductID', '$material', '$color1', '$color2', '$color3', '$color4', '$price', '$ContactNO');";
 }
 
