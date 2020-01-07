@@ -47,12 +47,12 @@
 
 	<form name="tshirt_details" action="storinguserinputdata.php"  method="POST">
 	<table id="tshirtdetails" border="0">
-	<h2><input type="text" name="theme" id="theme" readonly="readonly" value=<?php echo $row["Theme"]; ?>> </h2>
+	<h2><input  type="text" name="theme" id="theme" readonly="readonly" value=<?php echo $row["Theme"]; ?>> </h2>
 	<hr>
 		
 	<tr>
 		<td >Student ID: </td> 
-		<td class="tdetails"><input type="text" id="stid" name="stid" placeholder="Student ID" required></td>
+		<td class="tdetails"><input class="box_border" type="text" id="stid" name="stid" placeholder="Student ID" required></td>
 	</tr> 
 
 	<tr>
@@ -67,7 +67,7 @@
 
 	<tr>
 		<td >Contact NO: </td> 
-		<td class="tdetails"><input type="text" id="contno" name="contno" placeholder="Contact No" required></td>
+		<td class="tdetails"><input class="box_border" type="text" id="contno" name="contno" placeholder="Contact No" required></td>
 	</tr> 
 
 
