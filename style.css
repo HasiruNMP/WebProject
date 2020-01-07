@@ -139,7 +139,7 @@ body{
 .log{
 
 	width: 320px;
-	height: 420px;
+	height: 375px;
 	background: #000;
 	color: #fff;
 	top: 50%;
@@ -153,7 +153,7 @@ body{
 
 width: 100px;
 height: 100px;
-border-radius: 50%;
+/*border-radius: 50%;*/
 position: absolute;
 top: -50px;
 left: calc(33%);
@@ -171,7 +171,7 @@ h1{
 	font-weight: bold;
 }
 .log input{
-	width: 100px;
+	width: 200px;
 	margin: 20px;
 }
 .log input[type="text"],input[type="password"]{
@@ -187,25 +187,33 @@ h1{
 	border: none;
 	outline: none;
 	height: 50px;
-	background: #fb2525;
+	background: green;
 	color: #fff;
 	font-size: 18px;
-	border-radius: 30px;
+	border-radius:30px;
 }
-.log input[type="submit"]hover{
-	cursor:pointer; 
-	background:#ffc107;
-	color: #000;
-}
-.log a{
-	text-decoration: none;
-	font-size: 12px;
-	line-height: 20px;
-	color: darkgrey;
-}
-.log a:hover{
-	color: #ffc107;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
