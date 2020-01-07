@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 07, 2020 at 11:23 AM
--- Server version: 10.4.10-MariaDB
--- PHP Version: 7.3.12
+-- Generation Time: Jan 07, 2020 at 09:33 AM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,24 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `nsbmtshirts`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `admin_details`
---
-
-CREATE TABLE `admin_details` (
-  `Username` varchar(25) NOT NULL,
-  `Password` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `admin_details`
---
-
-INSERT INTO `admin_details` (`Username`, `Password`) VALUES
-('admin', 'admin');
 
 -- --------------------------------------------------------
 
