@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 07, 2020 at 09:33 AM
+-- Generation Time: Jan 07, 2020 at 01:40 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -30,7 +30,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `order_details` (
   `OrderID` int(20) NOT NULL,
+  `Theme` varchar(255) NOT NULL,
   `StudentID` varchar(20) NOT NULL,
+  `Gender` char(10) NOT NULL,
   `ContactNO` int(10) NOT NULL,
   `ProductID` varchar(20) NOT NULL,
   `Material` text NOT NULL,
@@ -43,13 +45,8 @@ CREATE TABLE `order_details` (
 -- Dumping data for table `order_details`
 --
 
-INSERT INTO `order_details` (`OrderID`, `StudentID`, `ContactNO`, `ProductID`, `Material`, `Color`, `Size`, `Price`) VALUES
-(1, '45454454', 7777, 'SE1040', 'cotton', 'black', '', '0'),
-(2, '45454454', 7777, 'SE1040', 'cotton', 'black', '', '0'),
-(3, '45454454', 7777, 'SE1040', 'cotton', 'black', '', '0'),
-(4, '45454454', 7777, 'SE1040', 'cotton', 'black', '', '0'),
-(5, '45454454', 7777, 'SE1040', 'cotton', 'black', '', '0'),
-(6, '12546688', 766807668, 'SE1040', 'Silk', 'blue', 'S', '0');
+INSERT INTO `order_details` (`OrderID`, `Theme`, `StudentID`, `Gender`, `ContactNO`, `ProductID`, `Material`, `Color`, `Size`, `Price`) VALUES
+(1, 'BATTA', '45454454', 'Male', 766807668, '1234', 'Wool', '#ff0000', 'M', '100');
 
 -- --------------------------------------------------------
 
@@ -74,7 +71,8 @@ CREATE TABLE `tshirt_details` (
 --
 
 INSERT INTO `tshirt_details` (`Theme`, `prodID`, `Material`, `Color1`, `Color2`, `Color3`, `Color4`, `Prices`, `ContactNO`) VALUES
-('pawan pakaya', '3435456', '', '', '', '', '', '0', 766807668);
+('BATTA', '1234', 'Wool', '#ffff00', '#ff0000', '#00ff40', '#400040', '100', 713033790),
+('NSBM', 'SE1040', 'Cotton', '#ffff00', '#ff0000', '#00ff40', '#400040', '100', 766807668);
 
 --
 -- Indexes for dumped tables
@@ -100,7 +98,7 @@ ALTER TABLE `tshirt_details`
 -- AUTO_INCREMENT for table `order_details`
 --
 ALTER TABLE `order_details`
-  MODIFY `OrderID` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `OrderID` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
