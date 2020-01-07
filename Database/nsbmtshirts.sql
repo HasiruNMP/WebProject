@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 07, 2020 at 01:40 PM
+-- Generation Time: Jan 07, 2020 at 02:26 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -80,8 +80,26 @@ INSERT INTO `tshirt_details` (`Theme`, `prodID`, `Material`, `Color1`, `Color2`,
 
 --
 -- Indexes for table `order_details`
--
+--
+ALTER TABLE `order_details`
+  ADD PRIMARY KEY (`OrderID`);
 
+--
+-- Indexes for table `tshirt_details`
+--
+ALTER TABLE `tshirt_details`
+  ADD PRIMARY KEY (`prodID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `order_details`
+--
+ALTER TABLE `order_details`
+  MODIFY `OrderID` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
