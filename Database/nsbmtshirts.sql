@@ -35,5 +35,14 @@ INSERT INTO `tshirts` (`Theme`, `prodID`, `Material`, `Color1`, `Color2`, `Color
 
 
 CREATE TABLE `students` (
-  `stuid` int(8) NOT NULL,
+  `stuid` varchar(8) NOT NULL,
   `password` varchar(20) NOT NULL);
+
+INSERT INTO `students` (`stuid`, `password`) VALUES
+('admin','password'),
+('21006502','password'),
+('21011848','password'),
+('21009439','password'),
+('21006863','password'),
+('21009419','password'),
+('21010128','password');
