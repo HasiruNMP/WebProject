@@ -52,12 +52,12 @@
 		
 	<tr>
 		<td >Student ID: </td> 
-		<td><input type="text" id="stid" name="stid" placeholder="Student ID" required></td>
+		<td class="tdetails"><input type="text" id="stid" name="stid" placeholder="Student ID" required></td>
 	</tr> 
 
 	<tr>
 		<td >Gender: </td> 
-		<td><input type="radio" id="gender" name="gender" value="Male">Male <input type="radio" id="gender" name="gender" value="Female">Female</td>
+		<td class="tdetails"><input type="radio" id="gender" name="gender" value="Male">Male <input type="radio" id="gender" name="gender" value="Female">Female</td>
 	</tr> 
 
 
@@ -67,7 +67,7 @@
 
 	<tr>
 		<td >Contact NO: </td> 
-		<td><input type="text" id="contno" name="contno" placeholder="Contact No" required></td>
+		<td class="tdetails"><input type="text" id="contno" name="contno" placeholder="Contact No" required></td>
 	</tr> 
 
 
@@ -76,20 +76,20 @@
 
 	<tr>
 		<td >Product ID: </td> 
-		<td><input  id="pid" name="pid" readonly="readonly"  value=<?php echo $row["prodID"]; ?> ></td>
+		<td class="tdetails"><input  id="pid" name="pid" readonly="readonly"  value=<?php echo $row["prodID"]; ?> ></td>
 	</tr> 
 
 
 	<tr>
 		<td >Material: </td> 
-		<td>
+		<td class="tdetails">
 			<input  id="Material" name="Material" readonly="readonly"  value=<?php echo $row["Material"];?> >
 		</td>
 	</tr> 
 
 	<tr>
 		<td>Color: </td> 
-		<td> <select name="color">
+		<td class="tdetails"> <select name="color">
 			<option> </option>
 			<option name="color1" style="background:<?php echo $row["Color1"];?>;color:<?php echo $row["Color1"];?>"> <?php echo $row["Color1"];?></option>
 			<option name="color2" style="background:<?php echo $row["Color2"];?>;color:<?php echo $row["Color2"];?>"> <?php echo $row["Color2"];?></option>
@@ -102,7 +102,7 @@
 
 	<tr>
 		<td>Size: </td> 
-		<td> <select name="size">
+		<td class="tdetails"> <select name="size">
 			<option> </option>
 			<option name="size1">S </option>
 			<option name="size2">M</option>
@@ -114,7 +114,7 @@
 	</tr>
 
 	<tr>
-<td>Price: </td> <td><input id="prices" name="prices" readonly="readonly"  value=<?php  echo  $row["Prices"];break; }?>>  </td>
+<td>Price: </td> <td class="tdetails"><input id="prices" name="prices" readonly="readonly"  value=<?php  echo  $row["Prices"];break; }?>>  </td>
 	</tr>		
 
 
