@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Tshirt1 </title>
+	<title>Tshirt3 </title>
 	<link rel="stylesheet" type="text/css" href="tshirt.css">
 </head>
 <body>
