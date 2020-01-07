@@ -124,6 +124,7 @@
 	</tr>
 </form>
 </table>
+		<hr>
 	</div>
 
 	<div id="left">
@@ -146,9 +147,7 @@
 </table>
 	</div>
 
-	<div id="bottom">
-			this is bottom side
-	</div>
+	
 
 
 
