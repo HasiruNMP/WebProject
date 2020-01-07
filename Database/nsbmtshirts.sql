@@ -80,7 +80,8 @@ INSERT INTO `tshirt_details` (`Theme`, `prodID`, `Material`, `Color1`, `Color2`,
 
 --
 -- Indexes for table `order_details`
---
+-
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
