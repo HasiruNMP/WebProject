@@ -25,7 +25,7 @@ $Price=$_REQUEST["prices"];
 if(isset($_REQUEST["order"]))
 {
 
-$query="INSERT INTO order_details (Theme, StudentID, Gender, ContactNO, ProductID, Material, Color, Size, Price) VALUES ('$Theme', '$StudentID', '$Gender', '$ContactNO', '$ProductID', '$Material', '$Color', '$Size', '$Price');";
+$query="INSERT INTO orders (Theme, StudentID, Gender, ContactNO, ProductID, Material, Color, Size, Price) VALUES ('$Theme', '$StudentID', '$Gender', '$ContactNO', '$ProductID', '$Material', '$Color', '$Size', '$Price');";
 }
 
  if($connection->query($query))
