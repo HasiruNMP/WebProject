@@ -1,9 +1,19 @@
 <html>
 <head>
 	<title>Tshirt1 </title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="tshirt.css">
 </head>
 <body>
+	<div id="container">
+	<img src="nsbmlogo.png">
+<table class="nav" align="right">
+      <tr>
+      	
+        <td><button class="button" style="vertical-align:middle" onclick="home()"><span>Home</span></button></td>
+        <td><button class="button" style="vertical-align:middle" onclick="adminlogin()"><span>Admin Login</span></button></td>
+        <td><button class="button" style="vertical-align:middle" onclick="logout()"><span>Log Out</span></button></td>
+      </tr>
+    </table>
 
 	<?php ///connecting nsbmtshirts database
 	
@@ -13,13 +23,8 @@
 	?>
 
 	
-	<div id="container">
-	<ul>
-		<li><a href="">Login Page</a></li>
-		<li><a href="">Home</a></li>
-		<li><a href="">Book My T-shirt</a></li>
-		<li><a href="">Contact Details</a></li>
-	</ul> 
+	
+
 	</div>
 
 	
