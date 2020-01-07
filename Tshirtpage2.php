@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Tshirt1 </title>
+	<title>Tshirt2 </title>
 	<script src="javascript.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
