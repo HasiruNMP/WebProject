@@ -33,8 +33,8 @@
 	<div id="right"> 
 		<?php
 
-			//selecting the tshirt_details table in database where prodID='SE1040'
-			$result= mysqli_query($connection,"select * from tshirts where prodID='1234'");
+			//selecting the tshirt_details table in database where prodID='SE1001'
+			$result= mysqli_query($connection,"select * from tshirts where prodID='SE1001'");
 
 		
 			//Retriving the data & display on the page
