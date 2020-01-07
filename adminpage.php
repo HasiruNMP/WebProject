@@ -4,25 +4,50 @@
 	<title></title>
 </head>
 <body>
+
 <?php
-	$tfront=$_REQUEST["tfront"];
-	$tback=$_REQUEST["tback"];
-	$tside=$_REQUEST["tside"];
+
+$connection= mysqli_connect("localhost","root","");
+$db=mysqli_select_db($connection,"nsbmtshirts"); //selecting the database
+
+//storing user input data in order_details table
 	$theme=$_REQUEST["theme"];
-	$colour1=$_REQUEST["colour1"];
-	$colour2=$_REQUEST["colour2"];
-	$colour3=$_REQUEST["colour3"];
-	$colour4=$_REQUEST["colour4"];
-	$materials=$_REQUEST["materials"];
-	$description=$_REQUEST["description"];
+	$ProductID=$_REQUEST["prodID"];
+	$material=$_REQUEST["materials"];
+	$color1=$_REQUEST["color1"];
+	$color2=$_REQUEST["color2"];
+	$color3=$_REQUEST["color3"];
+	$color4=$_REQUEST["color4"];
 	$price=$_REQUEST["price"];
-	$telephone=$_REQUEST["telephone"];
+	$ContactNO=$_REQUEST["contno"];
+
+
+
+if(isset($_REQUEST["submit"]))
+{
+
+$query="INSERT INTO tshirt_details (Theme, prodID, Material, Color1, Color2, Color3, Color4, Prices, ContactNO)
+ VALUES ('$theme', '$ProductID', '$material', '$color1', '$color2', '$color3', '$color4', '$price', '$ContactNO');";
+}
+
+ if($connection->query($query))
+ {
+ 	echo "record added successfully";
+ }
+ else
+ 	echo "error";
+
+
+
 ?>
-<table border="1">
-	<tr>
-		<td><?php echo $theme;?></td>
-	</tr>
-</table>
+
+<h1> Thankyour For ordering </h1>
 
 </body>
 </html>
+
+
+
+
+
+
