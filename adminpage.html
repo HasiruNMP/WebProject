@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h1>Admin Page</h1>
-<form method="post" action="adminpage.php">
+<form method="post" action="adminpage.php" enctype="multipart/form-data">
 	<ul>
 		<li><a href="">Login Page</a></li>
 		<li><a href="">Home</a></li>
@@ -14,26 +14,23 @@
 	</ul>
 	<table>
 		<tr>
-			<td>Upload an image of the front view of the T-shirt here:</td>
-			<td><input type="file" id="tfront" required></td>
+			<td>Product ID:</td>
+			<td><input type="text" name="prodID" id="prodID" required></td>
 		</tr>
-		<tr>
-			<td>Upload an image of the back view of the T-shirt here:</td>
-			<td><input type="file" id="tback" required></td>
-		</tr>
-		<tr>
-			<td>Upload an image of the side view of the T-shirt here:</td>
-			<td><input type="file" id="tside" required></td>
-		</tr>
+
 		<tr>
 			<td>Event/Theme:</td>
-			<td><input type="text" id="theme" required></td>
+			<td><input type="text" name="theme" id="theme" required></td>
 		</tr>
+		
 		<tr>
 			<td>Available Colours:</td>
-			<td><input type="color" id="colour1" required><input type="color" id="colour2"><input type="color" id="colour3"><input type="color" id="colour4">
+			<td><input type="color" id="color1" required><input type="color" id="color2"><input type="color" id="color3"><input type="color" id="color4">
 			</td>
 		</tr>
+
+
+
 		<tr>
 			<td>Available Materials:</td>
 			<td>
@@ -52,18 +49,31 @@
 				</select>
 			</td>
 		</tr>
-		<tr>
-			<td>Description:</td>
-			<td><input type="text" id="description"></td>
-		</tr>
+
 		<tr>
 			<td>Price:</td>
-			<td><input type="text" id="price" required></td>
+			<td><input type="text" name="price" id="price" required></td>
 		</tr>
 		<tr>
-			<td>Contact number:</td>
-			<td><input type="tel" minlength="10" maxlength="10" id="telephone" required></td>
+			<td>Contact Number:</td>
+			<td><input type="tel" name="contno" minlength="10" maxlength="10" id="contno" required></td>
 		</tr>
+		<tr>
+			<td>Upload an image of the front view of the T-shirt here:</td>
+			<td><input type="file" name="tfront" id="tfront" ></td>
+		</tr>
+		<tr>
+			<td>Upload an image of the back view of the T-shirt here:</td>
+			<td><input type="file" name="tback" id="tback" ></td>
+		</tr>
+		<tr>
+			<td>Upload an image of the side view of the T-shirt here:</td>
+			<td><input type="file" name="tback" id="tside" ></td>
+		</tr>
+		<tr>
+
+
+
 		<tr>
 			<td></td>
 			<td><input type="reset" name="reset"><input type="submit" name="submit"></td>
