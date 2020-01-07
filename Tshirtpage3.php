@@ -14,6 +14,15 @@
 
 	
 	<div id="container">
+	<img class="logo" src="nsbmlogo.png">
+	<table class="nav" align="right">
+      <tr>
+      	
+        <td><button class="button" style="vertical-align:middle" onclick="home()"><span>Home</span></button></td>
+        <td><button class="button" style="vertical-align:middle" onclick="adminlogin()"><span>Admin Login</span></button></td>
+        <td><button class="button" style="vertical-align:middle" onclick="logout()"><span>Log Out</span></button></td>
+      </tr>
+    	</table>
 	<ul>
 		<li><a href="">Login Page</a></li>
 		<li><a href="">Home</a></li>
