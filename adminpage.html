@@ -2,17 +2,22 @@
 <html>
 <head>
 	<title>Admin Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="javascript.js"></script>
 </head>
 <body>
-	<h1>Admin Page</h1>
+	<div class="site">
+	<img class="logo" src="nsbmlogo.png">
+<table class="nav" align="right">
+      <tr>
+        <td><button class="button" style="vertical-align:middle" onclick="logout()"><span>Log Out</span></button></td>
+      </tr>
+    </table>
+    </div>
+    <center>
 <form method="post" action="adminpage.php" enctype="multipart/form-data">
-	<ul>
-		<li><a href="">Login Page</a></li>
-		<li><a href="">Home</a></li>
-		<li><a href="">Book My T-shirt</a></li>
-		<li><a href="">Contact Details</a></li>
-	</ul>
-	<table>
+
+	<table class="admin_content">
 		<tr>
 			<td>Product ID:</td>
 			<td><input type="text" name="prodID" id="prodID" required></td>
@@ -71,15 +76,13 @@
 			<td><input type="file" name="tback" id="tside" ></td>
 		</tr>
 		<tr>
-
-
-
-		<tr>
-			<td></td>
-			<td><input type="reset" name="reset"><input type="submit" name="submit"></td>
+			<td colspan="2"><center><input type="reset" class="reset"><input type="submit" class="submit"></center></td>
 		</tr>
-	</table>
+
+		</table>
 	
 </form>
+</center>
 </body>
 </html>
+
