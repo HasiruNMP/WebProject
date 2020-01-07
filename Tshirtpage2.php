@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>Tshirt1 </title>
-	<link rel="stylesheet" type="text/css" href="tshirt.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
