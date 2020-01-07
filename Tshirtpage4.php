@@ -34,7 +34,7 @@
 		<?php
 
 			//selecting the tshirt_details table in database where prodID='SE1040'
-			$result= mysqli_query($connection,"select * from tshirts where prodID='1234'");
+			$result= mysqli_query($connection,"select * from tshirts where prodID='SE1004'");
 
 		
 			//Retriving the data & display on the page
