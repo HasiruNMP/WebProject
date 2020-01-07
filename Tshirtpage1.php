@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>Tshirt1 </title>
+	<script src="javascript.js"></script>
 	<link rel="stylesheet" type="text/css" href="tshirt.css">
 </head>
 <body>
