@@ -51,12 +51,12 @@
 	<hr>
 		
 	<tr>
-		<td >Student ID: </td> 
+		<td class="bold">Student ID: </td> 
 		<td class="tdetails"> <input class="box_border" type="text" id="stid" name="stid" placeholder="Student ID" required></td>
 	</tr> 
 
 	<tr>
-		<td >Gender: </td> 
+		<td class="bold">Gender: </td> 
 		<td class="tdetails"><input type="radio" id="gender" name="gender" value="Male">Male <input type="radio" id="gender" name="gender" value="Female">Female</td>
 	</tr> 
 
@@ -66,7 +66,7 @@
 
 
 	<tr>
-		<td >Contact NO: </td> 
+		<td class="bold">Contact NO: </td> 
 		<td class="tdetails"><input class="box_border" type="text" id="contno" name="contno" placeholder="Contact No" required></td>
 	</tr> 
 
@@ -75,20 +75,20 @@
 
 
 	<tr>
-		<td >Product ID: </td> 
+		<td class="bold">Product ID: </td> 
 		<td class="tdetails"><input class="box_border" id="pid" name="pid" readonly="readonly"  value=<?php echo $row["prodID"]; ?> ></td>
 	</tr> 
 
 
 	<tr>
-		<td >Material: </td> 
+		<td class="bold">Material: </td> 
 		<td class="tdetails">
 			<input class="box_border" id="Material" name="Material" readonly="readonly"  value=<?php echo $row["Material"];?> >
 		</td>
 	</tr> 
 
 	<tr>
-		<td>Color: </td> 
+		<td class="bold">Color: </td> 
 		<td class="tdetails"> <select name="color">
 			<option>-Select- </option>
 			<option name="color1" style="background:<?php echo $row["Color1"];?>;color:<?php echo $row["Color1"];?>"> <?php echo $row["Color1"];?></option>
@@ -101,7 +101,7 @@
 	</tr>
 
 	<tr>
-		<td>Size: </td> 
+		<td class="bold">Size: </td> 
 		<td class="tdetails"> <select name="size">
 			<option>-Select- </option>
 			<option name="size1">S </option>
@@ -114,7 +114,7 @@
 	</tr>
 
 	<tr>
-<td>Price: </td> <td class="tdetails"><input class="box_border" id="prices" name="prices" readonly="readonly"  value=<?php  echo  $row["Prices"];break; }?>>  </td>
+<td class="bold">Price: </td> <td class="tdetails"><input class="box_border" id="prices" name="prices" readonly="readonly"  value=<?php  echo  $row["Prices"];break; }?>>  </td>
 	</tr>		
 
 
