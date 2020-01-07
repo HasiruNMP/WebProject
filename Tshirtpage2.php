@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Tshirt2</title>
+	<title>Tshirt1 </title>
 	<link rel="stylesheet" type="text/css" href="tshirt.css">
 </head>
 <body>
@@ -25,31 +25,43 @@
 	
 
 	<div id="right"> 
-	<h2>19.1 Batch Party Tshirt</h2>
-	<hr>
-	<table id="tshirtdetails" border="0">
-		<form name="tshirt_details" action=""  method="POST">
-
 		<?php
 
 			//selecting the tshirt_details table in database where prodID='SE1040'
-			$result= mysqli_query($connection,"select * from tshirt_details where prodID='SE1040'");
+			$result= mysqli_query($connection,"select * from tshirt_details where prodID='1234'");
 
 		
 			//Retriving the data & display on the page
-		while($row = mysqli_fetch_array($result))
+	
+
+			while($row = mysqli_fetch_array($result))
 		{
 			?>
+	
 
+	<form name="tshirt_details" action="storinguserinputdata.php"  method="POST">
+	<table id="tshirtdetails" border="0">
+	<h2><input type="text" name="theme" id="theme" readonly="readonly" value=<?php echo $row["Theme"]; ?>> </h2>
+	<hr>
+		
 	<tr>
 		<td >Student ID: </td> 
-		<td><input type="text" id="stid" name="stid" placeholder="Student ID" ></td>
+		<td><input type="text" id="stid" name="stid" placeholder="Student ID" required></td>
 	</tr> 
+
+	<tr>
+		<td >Gender: </td> 
+		<td><input type="radio" id="gender" name="gender" value="Male">Male <input type="radio" id="gender" name="gender" value="Female">Female</td>
+	</tr> 
+
+
+
+
 
 
 	<tr>
 		<td >Contact NO: </td> 
-		<td><input type="text" id="contno" name="contno" placeholder="Contact No" ></td>
+		<td><input type="text" id="contno" name="contno" placeholder="Contact No" required></td>
 	</tr> 
 
 
@@ -64,21 +76,19 @@
 
 	<tr>
 		<td >Material: </td> 
-		<td><select name="Material">
-			<option name="material1" ><?php echo $row["Material1"];?> </option>
-			<option name="material2"><?php echo $row["Material2"];?> </option>
-			
-		</select>
-
+		<td>
+			<input  id="Material" name="Material" readonly="readonly"  value=<?php echo $row["Material"];?> >
 		</td>
 	</tr> 
 
 	<tr>
 		<td>Color: </td> 
 		<td> <select name="color">
-			<option name="color1"><?php echo $row["Color1"];?></option>
-			<option name="color2"><?php echo $row["Color2"];?></option>
-			<option name="color3"> <?php echo $row["Color3"];?></option>
+			<option> </option>
+			<option name="color1" style="background:<?php echo $row["Color1"];?>;color:<?php echo $row["Color1"];?>"> <?php echo $row["Color1"];?></option>
+			<option name="color2" style="background:<?php echo $row["Color2"];?>;color:<?php echo $row["Color2"];?>"> <?php echo $row["Color2"];?></option>
+			<option name="color3" style="background:<?php echo $row["Color3"];?>;color:<?php echo $row["Color3"];?>"> <?php echo $row["Color3"];?></option>
+			<option name="color4" style="background:<?php echo $row["Color4"];?>;color:<?php echo $row["Color4"];?>"> <?php echo $row["Color4"];?></option>
 		</select>
 
 		</td>
@@ -86,23 +96,25 @@
 
 	<tr>
 		<td>Size: </td> 
-		<td> <select name="Size">
-			<option name="size1"><?php echo $row["Size1"];?></option>
-			<option name="size2"><?php echo $row["Size2"];?></option>
-			<option name="size3"><?php echo $row["Size3"];?> </option>
-			<option name="size3"><?php echo $row["Size4"];?> </option>
+		<td> <select name="size">
+			<option> </option>
+			<option name="size1">S </option>
+			<option name="size2">M</option>
+			<option name="size2">L</option>
+			<option name="size3">XL</option>
+			<option name="size4">XXL </option>
 		</select>
 		</td>
 	</tr>
 
 	<tr>
-		<td>Price: </td> <td><input id="prices" name="prices" readonly="readonly"  value=<?php echo $row["Prices"];break;}?>/=> </td>
+<td>Price: </td> <td><input id="prices" name="prices" readonly="readonly"  value=<?php  echo  $row["Prices"];break; }?>>  </td>
 	</tr>		
 
 
 	<tr>
-		<td><input type="submit" value="Order Now" name="order"> </td>
-		<td><a href="../Size chart/checksize.html"><input type="button" value="Check Size Chart" name="checks"></a></td>
+		<td><input type="submit" value="Order Now" name="order"> </td><td> <input type="reset" value="Reset" name="reset"> 
+		<a href="../Size chart/checksize.html"><input type="button" value="Check Size Chart" name="checks"></a></td>
 	</tr>
 </form>
 </table>
@@ -136,29 +148,7 @@
 
 
 
-<?php
-//storing user input data in user table
-$StudentID=$_REQUEST["stid"];
-$ContactNO=$_REQUEST["contno"];
-$ProductID=$_REQUEST["pid"];
-$Material=$_REQUEST["Material"];
-$Color=$_REQUEST["color"];
-$Size=$_REQUEST["Size"];
-$Price=$_REQUEST["prices"];
 
-$query="INSERT INTO order_details (StudentID, ContactNO, ProductID, Material, Color, Size, Price)
- VALUES ('$StudentID', '$ContactNO', '$ProductID', '$Material', '$Color', '$Size', '$Price');";
-
- if($connection->query($query))
- {
- 	echo "record added successfully";
- }
- else
- 	echo "error";
-
-
-
-?>
 
 </body>
 </html>
