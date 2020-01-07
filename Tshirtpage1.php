@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div id="container">
-	<img src="nsbmlogo.png">
+	<img class="logo" src="nsbmlogo.png">
 <table class="nav" align="right">
       <tr>
       	
