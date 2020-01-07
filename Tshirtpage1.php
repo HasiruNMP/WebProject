@@ -52,7 +52,7 @@
 		
 	<tr>
 		<td >Student ID: </td> 
-		<td class="tdetails"><input class="box_border" type="text" id="stid" name="stid" placeholder="Student ID" required></td>
+		<td class="tdetails"> <input class="box_border" type="text" id="stid" name="stid" placeholder="Student ID" required></td>
 	</tr> 
 
 	<tr>
@@ -76,14 +76,14 @@
 
 	<tr>
 		<td >Product ID: </td> 
-		<td class="tdetails"><input  id="pid" name="pid" readonly="readonly"  value=<?php echo $row["prodID"]; ?> ></td>
+		<td class="tdetails"><input class="box_border" id="pid" name="pid" readonly="readonly"  value=<?php echo $row["prodID"]; ?> ></td>
 	</tr> 
 
 
 	<tr>
 		<td >Material: </td> 
 		<td class="tdetails">
-			<input  id="Material" name="Material" readonly="readonly"  value=<?php echo $row["Material"];?> >
+			<input class="box_border" id="Material" name="Material" readonly="readonly"  value=<?php echo $row["Material"];?> >
 		</td>
 	</tr> 
 
@@ -114,7 +114,7 @@
 	</tr>
 
 	<tr>
-<td>Price: </td> <td class="tdetails"><input id="prices" name="prices" readonly="readonly"  value=<?php  echo  $row["Prices"];break; }?>>  </td>
+<td>Price: </td> <td class="tdetails"><input class="box_border" id="prices" name="prices" readonly="readonly"  value=<?php  echo  $row["Prices"];break; }?>>  </td>
 	</tr>		
 
 
