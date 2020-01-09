@@ -21,3 +21,9 @@ function validate()
         document.getElementById('loginpage').action="js_validation.html";
       }
     }
+
+function adminlogout() 
+  {
+      window.open("js_validation.html");
+    }
+    
