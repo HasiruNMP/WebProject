@@ -47,16 +47,16 @@
 
 	<form name="tshirt_details" action="storingorderdetails.php"  method="POST">
 	<table id="tshirtdetails" border="0">
-	<h2><input  type="text" name="theme" id="theme" readonly="readonly" style="border:0px;" value=<?php echo $row["Theme"]; ?>> </h2>
+	<h2><input class="hideborder"  type="text" name="theme" id="theme" readonly="readonly"  value=<?php echo $row["Theme"]; ?>> </h2>
 	<hr>
 		
 	<tr>
-		<td class="bold">Student ID: </td> 
+		<td>Student ID: </td> 
 		<td class="tdetails"> <input class="box_border" type="text" id="stid" name="stid" placeholder="Student ID" required></td>
 	</tr> 
 
 	<tr>
-		<td class="bold">Gender: </td> 
+		<td>Gender: </td> 
 		<td class="tdetails"><input type="radio" id="gender" name="gender" value="Male">Male <input type="radio" id="gender" name="gender" value="Female">Female</td>
 	</tr> 
 
@@ -66,7 +66,7 @@
 
 
 	<tr>
-		<td class="bold">Contact NO: </td> 
+		<td>Contact NO: </td> 
 		<td class="tdetails"><input class="box_border" type="text" id="contno" name="contno" placeholder="Contact No" required></td>
 	</tr> 
 
@@ -75,20 +75,20 @@
 
 
 	<tr>
-		<td class="bold">Product ID: </td> 
-		<td class="tdetails"><input class="box_border" id="pid" name="pid" readonly="readonly"  value=<?php echo $row["prodID"]; ?> ></td>
+		<td>Product ID: </td> 
+		<td class="tdetails"><input class="hideborder" id="pid" name="pid" readonly="readonly"  value=<?php echo $row["prodID"]; ?> ></td>
 	</tr> 
 
 
 	<tr>
-		<td class="bold">Material: </td> 
+		<td>Material: </td> 
 		<td class="tdetails">
-			<input class="box_border" id="Material" name="Material" readonly="readonly"  value=<?php echo $row["Material"];?> >
+			<input class="hideborder" id="Material" name="Material" readonly="readonly"  value=<?php echo $row["Material"];?> >
 		</td>
 	</tr> 
 
 	<tr>
-		<td class="bold">Color: </td> 
+		<td>Color: </td> 
 		<td class="tdetails"> <select name="color">
 			<option>-Select- </option>
 			<option name="color1" style="background:<?php echo $row["Color1"];?>;color:<?php echo $row["Color1"];?>"> <?php echo $row["Color1"];?></option>
@@ -101,7 +101,7 @@
 	</tr>
 
 	<tr>
-		<td class="bold">Size: </td> 
+		<td>Size: </td> 
 		<td class="tdetails"> <select name="size">
 			<option>-Select- </option>
 			<option name="size1">S </option>
@@ -114,7 +114,7 @@
 	</tr>
 
 	<tr>
-<td class="bold">Price: </td> <td class="tdetails"><input class="box_border" id="prices" name="prices" readonly="readonly"  value=<?php  echo  $row["Prices"];break; }?>>  </td>
+<td>Price: </td> <td class="tdetails"><input class="hideborder" id="prices" name="prices" readonly="readonly"  value=  Rs.<?php  echo  $row["Prices"]; }?>>  </td>
 	</tr>		
 
 
