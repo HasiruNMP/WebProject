@@ -66,7 +66,7 @@
 
 
 	<tr>
-		<td>Contact NO: </td> 
+		<td>Contact No: </td> 
 		<td class="tdetails"><input class="box_border" type="text" id="contno" name="contno" placeholder="Contact No" required></td>
 	</tr> 
 
