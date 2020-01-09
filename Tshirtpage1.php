@@ -135,13 +135,13 @@
 		</td>
 
 		<td>
-	<a href="blue.jpg"><img src="blue.jpg"></a>
+	<a href="black 2 rear.JPG"><img src="black 2 rear.JPG"></a>
 		</td>
 	</tr>
 
 	<tr>
 		<td  id="thirdrow" colspan="2">
-	<a href="black.jpg"><img id="thirdimg" src="black.jpg"></a>
+	<a href="black 2 left.JPG"><img id="thirdimg" src="black 2 left.JPG"></a>
 		</td>
 	</tr>
 </table>
