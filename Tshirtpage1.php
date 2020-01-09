@@ -114,7 +114,7 @@
 	</tr>
 
 	<tr>
-<td class="bold">Price: </td> <td class="tdetails"><input class="hideborder" id="prices" name="prices" readonly="readonly"  value= Rs <?php  echo  $row["Prices"]; }?>>  </td>
+<td class="bold">Price: </td> <td class="tdetails"><input class="hideborder" id="prices" name="prices" readonly="readonly"  value=  Rs<?php  echo  $row["Prices"]; }?>>  </td>
 	</tr>		
 
 
