@@ -131,11 +131,11 @@
 	<table id="tshirttable" border="1">
 	<tr>
 		<td>
-	<a href="black 2 front.JPG"><img src="black 2 front.JPG"></a>
+	<a href="black 2 front.JPG"><img class="timg" src="black 2 front.JPG"></a>
 		</td>
 
 		<td>
-	<a href="black 2 rear.JPG"><img src="black 2 rear.JPG"></a>
+	<a href="black 2 rear.JPG"><img class="timg" src="black 2 rear.JPG"></a>
 		</td>
 	</tr>
 
