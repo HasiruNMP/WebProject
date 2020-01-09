@@ -47,7 +47,7 @@
 
 	<form name="tshirt_details" action="storingorderdetails.php"  method="POST">
 	<table id="tshirtdetails" border="0">
-	<h2><input  type="text" name="theme" id="theme" readonly="readonly" style="border:0px;" value=<?php echo $row["Theme"]; ?>> </h2>
+	<h2><input class="hideborder"  type="text" name="theme" id="theme" readonly="readonly"  value=<?php echo $row["Theme"]; ?>> </h2>
 	<hr>
 		
 	<tr>
@@ -76,14 +76,14 @@
 
 	<tr>
 		<td class="bold">Product ID: </td> 
-		<td class="tdetails"><input class="box_border" id="pid" name="pid" readonly="readonly"  value=<?php echo $row["prodID"]; ?> ></td>
+		<td class="tdetails"><input class="hideborder" id="pid" name="pid" readonly="readonly"  value=<?php echo $row["prodID"]; ?> ></td>
 	</tr> 
 
 
 	<tr>
 		<td class="bold">Material: </td> 
 		<td class="tdetails">
-			<input class="box_border" id="Material" name="Material" readonly="readonly"  value=<?php echo $row["Material"];?> >
+			<input class="hideborder" id="Material" name="Material" readonly="readonly"  value=<?php echo $row["Material"];?> >
 		</td>
 	</tr> 
 
@@ -114,7 +114,7 @@
 	</tr>
 
 	<tr>
-<td class="bold">Price: </td> <td class="tdetails"><input class="box_border" id="prices" name="prices" readonly="readonly"  value=<?php  echo  $row["Prices"];break; }?>>  </td>
+<td class="bold">Price: </td> <td class="tdetails"><input class="hideborder" id="prices" name="prices" readonly="readonly"  value=<?php  echo  $row["Prices"];break; }?>>  </td>
 	</tr>		
 
 

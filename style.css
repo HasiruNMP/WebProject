@@ -229,6 +229,11 @@ a:hover {
 
 }
 
+.hideborder
+{
+  border:0px;
+}
+
 #bottom
 
 {
