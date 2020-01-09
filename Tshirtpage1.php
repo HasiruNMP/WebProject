@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div id="container">
-	<img class="logo" src="nsbmlogo.png">
+	<img class="logo" src="Photos/nsbmlogo.png">
 <table class="nav" align="right">
       <tr>
       	
@@ -27,6 +27,7 @@
 	
 
 	</div>
+	<hr>
 
 	
 
@@ -66,7 +67,7 @@
 
 
 	<tr>
-		<td>Contact NO: </td> 
+		<td>Contact No: </td> 
 		<td class="tdetails"><input class="box_border" type="text" id="contno" name="contno" placeholder="Contact No" required></td>
 	</tr> 
 
@@ -124,28 +125,29 @@
 	</tr>
 </form>
 </table>
-		<hr>
+		
 	</div>
 
 	<div id="left">
 	<table id="tshirttable" border="0">
 	<tr>
 		<td>
-	<a href="black 2 front.JPG"><img class="timg" src="black 2 front.JPG"></a>
+	<a href="Photos/black 2 front.JPG"><img class="timg" src="Photos/black 2 front.JPG"></a>
 		</td>
 
 		<td>
-	<a href="black 2 rear.JPG"><img class="timg" src="black 2 rear.JPG"></a>
+	<a href="Photos/black 2 rear.JPG"><img class="timg" src="Photos/black 2 rear.JPG"></a>
 		</td>
 	</tr>
 
 	<tr>
 		<td  id="thirdrow" colspan="2">
-	<a href="black 2 left.JPG"><img id="thirdimg" src="black 2 left.JPG"></a>
+	<a href="Photos/black 2 left.JPG"><img id="thirdimg" src="Photos/black 2 left.JPG"></a>
 		</td>
 	</tr>
 </table>
 	</div>
+	<hr>
 
 	
 
