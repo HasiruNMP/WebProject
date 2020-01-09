@@ -177,8 +177,10 @@ a:hover {
 	height:80%;
 	
 	padding-top:2%;
-	background-color:white;
+	background-color:
 	}
+
+
 
 .box_border
 {
@@ -203,7 +205,7 @@ a:hover {
 	width:300px;
 	height:300px;
 	padding-left:5%;
-  background-color:white;
+  background-color:
 	
 }
 
@@ -212,8 +214,6 @@ a:hover {
 	padding-top:2%;
 	width:51%;
 	height:80%;
-	
-	background-color:white;
 	float:right;
 
 

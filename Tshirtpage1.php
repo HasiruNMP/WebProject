@@ -27,6 +27,7 @@
 	
 
 	</div>
+	<hr>
 
 	
 
@@ -124,7 +125,7 @@
 	</tr>
 </form>
 </table>
-		<hr>
+		
 	</div>
 
 	<div id="left">
@@ -146,6 +147,7 @@
 	</tr>
 </table>
 	</div>
+	<hr>
 
 	
 
