@@ -47,7 +47,7 @@
 
 	<form name="tshirt_details" action="storingorderdetails.php"  method="POST">
 	<table id="tshirtdetails" border="0">
-	<h2><input  type="text" name="theme" id="theme" readonly="readonly" border="0" value=<?php echo $row["Theme"]; ?>> </h2>
+	<h2><input  type="text" name="theme" id="theme" readonly="readonly"  value=<?php echo $row["Theme"]; ?>> </h2>
 	<hr>
 		
 	<tr>
