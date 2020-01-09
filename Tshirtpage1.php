@@ -128,7 +128,7 @@
 	</div>
 
 	<div id="left">
-	<table id="tshirttable" border="1">
+	<table id="tshirttable" border="0">
 	<tr>
 		<td>
 	<a href="black 2 front.JPG"><img class="timg" src="black 2 front.JPG"></a>
