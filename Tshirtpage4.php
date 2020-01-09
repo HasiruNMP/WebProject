@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div id="container">
-	<img class="logo" src="nsbmlogo.png">
+	<img class="logo" src="Photos/nsbmlogo.png">
 <table class="nav" align="right">
       <tr>
       	
@@ -131,17 +131,17 @@
 	<table id="tshirttable" border="0">
 	<tr>
 		<td>
-	<a href="red.jpg"><img src="red.jpg"></a>
+	<a href="Photos/red.jpg"><img src="Photos/red.jpg"></a>
 		</td>
 
 		<td>
-	<a href="blue.jpg"><img src="blue.jpg"></a>
+	<a href="Photos/blue.jpg"><img src="Photos/blue.jpg"></a>
 		</td>
 	</tr>
 
 	<tr>
 		<td  id="thirdrow" colspan="2">
-	<a href="black.jpg"><img id="thirdimg" src="black.jpg"></a>
+	<a href="Photos/black.jpg"><img id="thirdimg" src="Photos/black.jpg"></a>
 		</td>
 	</tr>
 </table>
