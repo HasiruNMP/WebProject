@@ -259,7 +259,7 @@ a:hover {
 /*login page*/
 .g{
     background: rgba(255, 255, 255,0.6);
-    height: 500px;
+    height: 600px;
   width: 1000px;
 position: absolute;
 margin-left: 167px;
@@ -330,7 +330,7 @@ left: calc(33%);
 /*admin content*/
 .admin_content{
     width: 1000px;
-    height: 500px;
+    height: 600px;
 	color: white;
 	margin-top: 50px;
 	border-spacing: 20px;
@@ -367,6 +367,13 @@ left: calc(33%);
 .button2{
 	border-radius:30px;
 }
+
+.tpic{
+  height: 300px;
+  width: auto;
+}
+
+/*main changes*/
 
 body{
   background-image: url(background.jpg);
