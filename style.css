@@ -93,6 +93,7 @@ a:hover {
 }
 .site
 {
+  background: rgba(255, 255, 255,0.6);
   margin: 10px auto;
   width: 1000px;
 }
@@ -366,6 +367,14 @@ left: calc(33%);
 
 .button2{
 	border-radius:30px;
+}
+
+body{
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 
