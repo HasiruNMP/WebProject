@@ -5,7 +5,7 @@ function home()
 
 function logout() 
 	{
-  		window.open("index.html");
+  		window.open("login2.html");
   	}
     
 function validate() 
