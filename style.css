@@ -377,6 +377,9 @@ body{
   background-attachment: fixed;
 }
 
+.submit,.reset{
+  cursor: pointer;
+}
 
 
 
