@@ -5,6 +5,7 @@ function customerpage()
 
 function studentlogin() 
 	{
+    this.close();
   		window.open("login2.html");
   	}
     
@@ -24,6 +25,7 @@ function validate()
 
 function adminlogin() 
   {
+    this.close();
       window.open("js_validation.html");
     }
 
