@@ -61,8 +61,10 @@
 
 	<form name="tshirt_details" action="storingorderdetails.php"  method="POST">
 	<table id="tshirtdetails" border="0">
-	<h2><input class="themename"  type="text" name="theme" id="theme" readonly="readonly"  value=<?php echo $row["Theme"]; ?>> </h2>
+	<h2 id="themename"> <?php echo $row["Theme"]; ?></h2>
 	<hr>
+
+	
 		
 	<tr>
 		<td class="tdpadding1">Student ID:</td>
@@ -84,8 +86,10 @@
 		<td class="tdpadding2"><input class="box_border" type="text" id="contno" name="contno" placeholder="Contact No" required></td>
 	</tr> 
 
-
-		
+	<tr>
+		<td class="tdpadding1">Theme Name:</td>
+		<td class="tdpadding2"> <input class="hideborder" type="text" name="theme" id="theme" readonly="readonly"  value=<?php echo $row["Theme"]; ?>></td>
+	</tr> 
 
 
 	<tr>
