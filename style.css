@@ -410,24 +410,17 @@ left: calc(33%);
 }
 
 .button2{
-<<<<<<< HEAD
-	
-   background-color:#394040;
-        color: #FFFFFF;
-        padding: 10px;
-        border-radius: 10px;
-        -moz-border-radius: 20px;
-        -webkit-border-radius: 10px;
-     
-=======
-	border-radius:30px;
+  border-color:cyan;
+  padding: 10px;
+
+  -webkit-border-radius: 5px;
 	background-color: #4CAF50;
  	cursor: pointer;
-	color:white;
+	color:black;
 	padding: 10px 6px;
+  
 	border: solid;
-	border-color:#067020;
->>>>>>> a4ddabbe1bc9e315071048ed7a68adc149d0324e
+
 }
 
 .tpic{
