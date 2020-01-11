@@ -384,6 +384,12 @@ left: calc(33%);
 
 .button2{
 	border-radius:30px;
+	background-color: #4CAF50;
+ 	cursor: pointer;
+	color:white;
+	padding: 10px 6px;
+	border: solid;
+	border-color:#067020;
 }
 
 .tpic{
