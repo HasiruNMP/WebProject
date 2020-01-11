@@ -4,6 +4,13 @@
 	<link rel="shortcut icon" type="image/x-icon" href="Photos/logo1.png" />
 	<script src="javascript.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	
+	
+
+
+
+	
 </head>
 <body>
 	<div id="container">
