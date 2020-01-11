@@ -131,17 +131,17 @@
 	<table id="tshirttable" border="0">
 	<tr>
 		<td>
-	<a href="Photos/red.jpg"><img src="Photos/red.jpg"></a>
+	<a href="Photos/blue front.JPG"><img class="timg" src="Photos/blue front.JPG"></a>
 		</td>
 
 		<td>
-	<a href="Photos/blue.jpg"><img src="Photos/blue.jpg"></a>
+	<a href="Photos/blue rear.JPG"><img class="timg" src="Photos/blue rear.JPG"></a>
 		</td>
 	</tr>
 
 	<tr>
 		<td  id="thirdrow" colspan="2">
-	<a href="Photos/black.jpg"><img id="thirdimg" src="Photos/black.jpg"></a>
+	<a href="Photos/blue left.JPG"><img class="timg" src="Photos/blue left.JPG"></a>
 		</td>
 	</tr>
 </table>
