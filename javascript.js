@@ -1,9 +1,9 @@
-function home() 
+function customerpage() 
 	{
   		window.open("customerpage.html");
   	}
 
-function logout() 
+function studentlogin() 
 	{
   		window.open("login2.html");
   	}
@@ -22,8 +22,12 @@ function validate()
       }
     }
 
-function adminlogout() 
+function adminlogin() 
   {
       window.open("js_validation.html");
     }
+
+function goback() {
+  window.history.back();
+}
     
