@@ -1,10 +1,12 @@
-function home() 
+function customerpage() 
 	{
+    this.close();
   		window.open("customerpage.html");
   	}
 
-function logout() 
+function studentlogin() 
 	{
+    this.close();
   		window.open("login2.html");
   	}
     
@@ -22,8 +24,14 @@ function validate()
       }
     }
 
-function adminlogout() 
+function adminlogin() 
   {
+    this.close();
       window.open("js_validation.html");
     }
+
+function goback() {
+  this.close();
+  window.history.back();
+}
     

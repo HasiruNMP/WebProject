@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>Tshirt2 </title>
+	<link rel="shortcut icon" type="image/x-icon" href="Photos/logo1.png" />
 	<script src="javascript.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -131,17 +132,17 @@
 	<table id="tshirttable" border="0">
 	<tr>
 		<td>
-	<a href="Photos/red.jpg"><img src="Photos/red.jpg"></a>
+	<a href="Photos/black front.JPG"><img class="timg" src="Photos/black front.JPG"></a>
 		</td>
 
 		<td>
-	<a href="Photos/blue.jpg"><img src="Photos/blue.jpg"></a>
+	<a href="Photos/black rear.JPG"><img class="timg" src="Photos/black rear.JPG"></a>
 		</td>
 	</tr>
 
 	<tr>
 		<td  id="thirdrow" colspan="2">
-	<a href="Photos/black.jpg"><img id="thirdimg" src="Photos/black.jpg"></a>
+	<a href="Photos/black left.JPG"><img id="thirdimg" src="Photos/black left.JPG"></a>
 		</td>
 	</tr>
 </table>
