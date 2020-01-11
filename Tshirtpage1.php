@@ -6,13 +6,25 @@
 </head>
 <body>
 	<div id="container">
-	<img class="logo" src="Photos/nsbmlogo.png">
-<table class="nav" align="right">
+	<table class="site">
+	<tr class="top">
+		<td class="head"><!--Name of the site-->
+			<img src="Photos/tshirtlogo.png"style="width:310px;height: auto;" >
+		</td>
+		<td class="logo"><!--logo class-->
+			<img src="Photos/nsbmlogo.png"style="width:310px;height: auto;" >
+		</td>
+	</tr>
+	
+</table>
+	
+
+	<table class="clearfix" align="center">
       <tr>
       	
-        <td><button class="button" style="vertical-align:middle" onclick="home()"><span>Home</span></button></td>
-        <td><button class="button" style="vertical-align:middle" onclick="adminlogin()"><span>Admin Login</span></button></td>
+        <td><button class="button" style="vertical-align:middle" onclick="adminlogout()"><span>Admin Login</span></button></td>
         <td><button class="button" style="vertical-align:middle" onclick="logout()"><span>Log Out</span></button></td>
+        <td><button class="button" style="vertical-align:middle" onclick="window.location.href='#contact'"><span>Contact Us</span></button></td>
       </tr>
     </table>
 
@@ -48,17 +60,17 @@
 
 	<form name="tshirt_details" action="storingorderdetails.php"  method="POST">
 	<table id="tshirtdetails" border="0">
-	<h2><input class="hideborder"  type="text" name="theme" id="theme" readonly="readonly"  value=<?php echo $row["Theme"]; ?>> </h2>
+	<h2><input class="themename"  type="text" name="theme" id="theme" readonly="readonly"  value=<?php echo $row["Theme"]; ?>> </h2>
 	<hr>
 		
 	<tr>
-		<td>Student ID: </td> 
-		<td class="tdetails"> <input class="box_border" type="text" id="stid" name="stid" placeholder="Student ID" required></td>
+		<td class="tdpadding1">Student ID:</td>
+		<td class="tdpadding2"> <input class="box_border" type="text" id="stid" name="stid" placeholder="Student ID" required></td>
 	</tr> 
 
 	<tr>
-		<td>Gender: </td> 
-		<td class="tdetails"><input type="radio" id="gender" name="gender" value="Male">Male <input type="radio" id="gender" name="gender" value="Female">Female</td>
+		<td class="tdpadding1">Gender: </td> 
+		<td class="tdpadding2"><input type="radio" id="gender" name="gender" value="Male" required>Male <input type="radio" id="gender" name="gender" value="Female" required>Female</td>
 	</tr> 
 
 
@@ -67,8 +79,8 @@
 
 
 	<tr>
-		<td>Contact No: </td> 
-		<td class="tdetails"><input class="box_border" type="text" id="contno" name="contno" placeholder="Contact No" required></td>
+		<td class="tdpadding1">Contact No: </td> 
+		<td class="tdpadding2"><input class="box_border" type="text" id="contno" name="contno" placeholder="Contact No" required></td>
 	</tr> 
 
 
@@ -76,22 +88,22 @@
 
 
 	<tr>
-		<td>Product ID: </td> 
-		<td class="tdetails"><input class="hideborder" id="pid" name="pid" readonly="readonly"  value=<?php echo $row["prodID"]; ?> ></td>
+		<td class="tdpadding1">Product ID: </td> 
+		<td class="tdpadding2"><input class="hideborder" id="pid" name="pid" readonly="readonly"  value=<?php echo $row["prodID"]; ?> ></td>
 	</tr> 
 
 
 	<tr>
-		<td>Material: </td> 
-		<td class="tdetails">
+		<td class="tdpadding1">Material: </td> 
+		<td class="tdpadding2">
 			<input class="hideborder" id="Material" name="Material" readonly="readonly"  value=<?php echo $row["Material"];?> >
 		</td>
 	</tr> 
 
 	<tr>
-		<td>Color: </td> 
-		<td class="tdetails"> <select name="color">
-			<option>-Select- </option>
+		<td class="tdpadding1">Color: </td> 
+		<td class="tdpadding2"> <select name="color" required>
+			<option value="">-Select- </option>
 			<option name="color1" style="background:<?php echo $row["Color1"];?>;color:<?php echo $row["Color1"];?>"> <?php echo $row["Color1"];?></option>
 			<option name="color2" style="background:<?php echo $row["Color2"];?>;color:<?php echo $row["Color2"];?>"> <?php echo $row["Color2"];?></option>
 			<option name="color3" style="background:<?php echo $row["Color3"];?>;color:<?php echo $row["Color3"];?>"> <?php echo $row["Color3"];?></option>
@@ -102,9 +114,9 @@
 	</tr>
 
 	<tr>
-		<td>Size: </td> 
-		<td class="tdetails"> <select name="size">
-			<option>-Select- </option>
+		<td class="tdpadding1">Size: </td> 
+		<td class="tdpadding2"> <select name="size" required>
+			<option value="">-Select- </option>
 			<option name="size1">S </option>
 			<option name="size2">M</option>
 			<option name="size2">L</option>
@@ -115,7 +127,7 @@
 	</tr>
 
 	<tr>
-<td>Price: </td> <td class="tdetails"><input class="hideborder" id="prices" name="prices" readonly="readonly"  value=  Rs.<?php  echo  $row["Prices"]; }?>>  </td>
+<td class="tdpadding1">Price: </td> <td class="tdpadding2"><input class="hideborder" id="prices" name="prices" readonly="readonly"  value=Rs.<?php  echo  $row["Prices"]; }?>>  </td>
 	</tr>		
 
 
@@ -146,8 +158,16 @@
 		</td>
 	</tr>
 </table>
+
+
 	</div>
 	<hr>
+	<div id="contact" class="contact"><!--contacting options-->
+	<p ><u><center>Contact Us</center></u></p>
+	<p><center>tshirts@nsbm.com</center></p>
+	<p><center>011-1231235</center></p>
+</div>
+
 
 	
 

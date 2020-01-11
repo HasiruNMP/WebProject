@@ -195,6 +195,7 @@ a:hover {
 {
 	height:220px;
   width:270px;
+   border-radius: 8px;
 	
 	
 
@@ -205,9 +206,11 @@ a:hover {
 	width:300px;
 	height:300px;
 	padding-left:5%;
-  background-color:
+
+  background-color:;
 	
 }
+
 
 #right
 {
@@ -222,6 +225,15 @@ a:hover {
 .hideborder
 {
   border:0px;
+  width:100px;
+}
+
+.themename
+{
+  border:0px;
+
+ 
+  font-size:25px;
 }
 
 #bottom
@@ -245,9 +257,26 @@ a:hover {
 	padding-left:50%;
   height:220px;
   width:270px;
+  border-radius: 8px;
   
   
 }
+
+
+.tdpadding1
+{
+
+  padding-bottom:21px;
+
+}
+
+.tdpadding2
+{
+  padding-left:100px;
+
+}
+
+
 
 /*logo*/
 .logo{
@@ -316,10 +345,8 @@ left: calc(33%);
 	border-radius:30px;
 }
 
-.tdetails{
 
-	padding-left: 60px;
-}
+
 
 /*admin content*/
 .beaker{
@@ -383,7 +410,14 @@ left: calc(33%);
 }
 
 .button2{
-	border-radius:30px;
+	
+   background-color:#394040;
+        color: #FFFFFF;
+        padding: 10px;
+        border-radius: 10px;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 10px;
+     
 }
 
 .tpic{
