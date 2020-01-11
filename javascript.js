@@ -1,5 +1,6 @@
 function customerpage() 
 	{
+    this.close();
   		window.open("customerpage.html");
   	}
 
@@ -30,6 +31,7 @@ function adminlogin()
     }
 
 function goback() {
+  this.close();
   window.history.back();
 }
     
