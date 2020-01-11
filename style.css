@@ -384,6 +384,9 @@ left: calc(33%);
 
 .button2{
 	border-radius:30px;
+	background-color: #4CAF50;
+ 	cursor: pointer;
+	border: none;
 }
 
 .tpic{
