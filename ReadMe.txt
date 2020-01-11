@@ -1,4 +1,4 @@
-Web Application Development Group Project [ NSBM PLY SE 1Y 2S ]
+Web Application Development Group Project [ NSBM PLY SE Y1 S2 ]
 
 Project Idea : T-shirts Order Taking Website in NSBM
 
