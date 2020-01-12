@@ -3,6 +3,13 @@
 	<title>Tshirt3 </title>
 	<link rel="shortcut icon" type="image/x-icon" href="Photos/logo1.png" />
 	<script src="javascript.js"></script>
+	<script>
+		function confirmorder()
+		{
+  			window.confirm("Are you sure you want to place this order?");
+		}
+
+	</script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -137,7 +144,7 @@
 
 
 	<tr>
-		<td><input class="button2" type="submit" value="Order Now" name="order"> </td><td> <input class="button2" type="reset" value="Reset" name="reset"> 
+		<td><input class="button2" type="submit" value="Order Now" name="order" onclick="confirmorder()"> </td><td> <input class="button2" type="reset" value="Reset" name="reset"> 
 		<a href="sizechart.html"><input class="button2" type="button" value="Check Size Chart" name="checks"></a></td>
 	</tr>
 </form>
