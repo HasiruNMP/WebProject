@@ -145,7 +145,7 @@
 
 	<tr>
 		<td><input class="button2" type="submit" value="Order Now" name="order" onclick="confirmorder()"> </td><td> <input class="button2" type="reset" value="Reset" name="reset"> 
-		<a href="sizechart.html"><input class="button2" type="button" value="Check Size Chart" name="checks"></a></td>
+		<a href="sizechart.html"><input class="button2" type="button" value="Size Chart" name="checks"></a></td>
 	</tr>
 </form>
 </table>
