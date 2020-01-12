@@ -172,6 +172,7 @@
 
 
 	</div>
+	<br>
 	<hr>
 	<div id="contact" class="contact"><!--contacting options-->
 	<p ><u><center>Contact Us</center></u></p>
