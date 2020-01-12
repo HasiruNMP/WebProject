@@ -8,7 +8,6 @@
 		{
   			window.confirm("Are you sure you want to place this order?");
 		}
-
 	</script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -41,7 +40,6 @@
 	
 	$connection= mysqli_connect("localhost","root","");
 	$db=mysqli_select_db($connection,"nsbmtshirts"); //selecting the database
-
 	?>
 
 	
@@ -54,14 +52,11 @@
 
 	<div id="right"> 
 		<?php
-
 			//selecting the tshirt_details table in database where prodID='SE1001'
 			$result= mysqli_query($connection,"select * from tshirts where prodID='SE1001'");
-
 		
 			//Retriving the data & display on the page
 	
-
 			while($row = mysqli_fetch_array($result))
 		{
 			?>
