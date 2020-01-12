@@ -7,7 +7,7 @@ function customerpage()
 function studentlogin() 
 	{
     this.close();
-  		window.open("login2.html");
+  		window.open("login3.html");
   	}
     
 function validate() 
