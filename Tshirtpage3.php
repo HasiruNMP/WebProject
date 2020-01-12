@@ -91,7 +91,7 @@
 	</tr> 
 
 	<tr>
-		<td class="tdpadding1">Theme Name:</td>
+		<td class="tdpadding1">Theme name:</td>
 		<td class="tdpadding2"> <input class="hideborder" type="text" name="theme" id="theme" readonly="readonly"  value=<?php echo $row["Theme"]; ?>></td>
 	</tr> 
 
