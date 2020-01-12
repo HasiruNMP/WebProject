@@ -175,21 +175,26 @@ a:hover
 }
 /*T-shirt page*/
 
-#container
-{
-	height:40%;
-	width:100%;
-	
-}
 
-#left
+
+#tleft
 	{
-	width:49%;
-	
-	
-	padding-top:2%;
-	background-color:
+	width:50%;
+	height:500px;
+	background-color:;
 	}
+
+
+  #tright
+{
+  padding-left:2%;
+  width:50%;
+  height:500px;
+  background-color:;
+  float:right;
+
+
+}
 
 
 
@@ -204,34 +209,34 @@ a:hover
 
 .timg
 {
-	height:220px;
-  width:270px;
+	height:230px;
+  width:300px;
    border-radius: 8px;
 	
 	
 
 }
 
+#thirdimg
+{
+
+  height:230px;
+  width:300px;
+  border-radius: 8px;
+}
+
+#thirdrow
+{
+  padding-left:25%;
+}
+
 #tshirtdetails
 {
-	width:300px;
-	height:300px;
-	padding-left:5%;
+
 
   background-color:;
-	
 }
 
-
-#right
-{
-	padding-top:2%;
-	width:51%;
-	
-	float:right;
-
-
-}
 
 .hideborder
 {
@@ -258,27 +263,12 @@ a:hover
 
 #tshirttable
 {
-	margin-left:2.5%;
-	height:450px;
+	
+	height:500px;
  
 	
 }
 
-#thirdimg
-{
-	align
-  height:220px;
-  width:270px;
-  border-radius: 8px;
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:46%;
- 
-  
-  
-}
 
 
 .tdpadding1

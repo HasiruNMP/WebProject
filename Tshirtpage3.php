@@ -2,19 +2,18 @@
 <head>
 	<title>Tshirt3 </title>
 	<link rel="shortcut icon" type="image/x-icon" href="Photos/logo1.png" />
-	<script src="javascript.js"></script>
+	<script src="javascript.js"> </script>
 	<script>
 		function confirmorder()
 		{
   			window.confirm("Are you sure you want to place this order?");
 		}
-
 	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-	<div id="container">
 	<table class="site">
 	<tr class="top">
 		<td class="head"><!--Name of the site-->
@@ -25,7 +24,12 @@
 		</td>
 	</tr>
 	
-<table class="clearfix" align="center">
+	</table>
+
+
+
+	<div>
+	<table class="clearfix" align="center">
       <tr>
       	
         <td><button class="button" style="vertical-align:middle" onclick="adminlogin()"><span>Admin Login</span></button></td>
@@ -38,7 +42,6 @@
 	
 	$connection= mysqli_connect("localhost","root","");
 	$db=mysqli_select_db($connection,"nsbmtshirts"); //selecting the database
-
 	?>
 
 	
@@ -49,16 +52,13 @@
 
 	
 
-	<div id="right"> 
+	<div id="tright"> 
 		<?php
-
 			//selecting the tshirt_details table in database where prodID='SE1001'
 			$result= mysqli_query($connection,"select * from tshirts where prodID='SE1003'");
-
 		
 			//Retriving the data & display on the page
 	
-
 			while($row = mysqli_fetch_array($result))
 		{
 			?>
@@ -150,8 +150,8 @@
 		
 	</div>
 
-	<div id="left">
-	<table id="tshirttable" border="0">
+	<div id="tleft">
+	<table id="tshirttable" border="0" align="right">
 	<tr>
 		<td>
 	<a href="Photos/blue front.JPG"><img class="timg" src="Photos/blue front.JPG"></a>
@@ -164,25 +164,19 @@
 
 	<tr>
 		<td  id="thirdrow" colspan="2">
-	<a href="Photos/blue left.JPG"><img id="thirdimg" src="Photos/blue left.JPG"></a>
+	<a href="Photos/blue right.JPG"><img id="thirdimg" src="Photos/blue right.JPG"></a>
 		</td>
 	</tr>
 </table>
-
-
-	</div>
-	<br>
-	<hr>
-	<div id="contact" class="contact"><!--contacting options-->
+</div>
+<hr>
+<div id="contact" class="contact"><!--contacting options-->
 	<p ><u><center>Contact Us</center></u></p>
 	<p><center>tshirts@nsbm.com</center></p>
 	<p><center>011-1231235</center></p>
 </div>
 
-
 	
-
-
 
 
 
