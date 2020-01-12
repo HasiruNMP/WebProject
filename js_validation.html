@@ -7,20 +7,39 @@
 	<script src="javascript.js"></script>
 </head>
 <body>
-	<div class="log">
-		<img src="Photos/logo1.png" class="avatar" height="50%" width="50%">
-		<center><h1>LOGIN HERE</h1></center>
+	<table class="site">
+	<tr class="top">
+		<td class="head"><!--Name of the site-->
+			<img src="Photos/tshirtlogo.png"style="width:310px;height: auto;" >
+		</td>
+		<td class="logo"><!--logo class-->
+			<img src="Photos/nsbmlogo.png"style="width:310px;height: auto;" >
+		</td>
+	</tr>
+	
+</table>
+	<table class="log" align="center">
+		<tr><td colspan="2">
+		
+		<center><h1>LOGIN HERE</h1></center></td>
+		<tr>
 		<form id="loginpage" name="frm_1" action="adminpage.html" onsubmit="validate()"><center>
-			<P align="left">Username</P>
-			<input type="text" name="uname" placeholder="            Enter Username">
-			<p align="left">Password</p>
-			<input type="password" name="upassword" placeholder="             Enter Password">
+			<td><P>Username</P></td>
+			<td><input type="text" name="uname" placeholder="            Enter Username"></td>
+		</tr>
+		<tr>
+			<td><p>Password</p></td>
+			<td><input type="password" name="upassword" placeholder="             Enter Password"></td>
+		</tr>
+		<tr><td colspan="2" align="center">
 			<input type="submit" class="submit" name="submit" value="Login">
 			
 		</form>
-		<a href="customerpage.html">Customer Page</a>
+		
 		</center>
-	</div>
+		</td></tr>
+	</table>
+	<center><a href="customerpage.html">Customer Page</a></center>
 
 </body>
 </html>
