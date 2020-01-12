@@ -10,11 +10,11 @@
 		}
 
 	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-	<div id="container">
 	<table class="site">
 	<tr class="top">
 		<td class="head"><!--Name of the site-->
@@ -25,9 +25,11 @@
 		</td>
 	</tr>
 	
-</table>
-	
+	</table>
 
+
+
+	<div>
 	<table class="clearfix" align="center">
       <tr>
       	
@@ -52,7 +54,7 @@
 
 	
 
-	<div id="right"> 
+	<div id="tright"> 
 		<?php
 
 			//selecting the tshirt_details table in database where prodID='SE1001'
@@ -153,8 +155,8 @@
 		
 	</div>
 
-	<div id="left">
-	<table id="tshirttable" border="0">
+	<div id="tleft">
+	<table id="tshirttable" border="0" align="right">
 	<tr>
 		<td>
 	<a href="Photos/black 2 front.JPG"><img class="timg" src="Photos/black 2 front.JPG"></a>
@@ -171,12 +173,9 @@
 		</td>
 	</tr>
 </table>
-
-
-	</div>
-	<br>
-	<hr>
-	<div id="contact" class="contact"><!--contacting options-->
+</div>
+<hr>
+<div id="contact" class="contact"><!--contacting options-->
 	<p ><u><center>Contact Us</center></u></p>
 	<p><center>tshirts@nsbm.com</center></p>
 	<p><center>011-1231235</center></p>
