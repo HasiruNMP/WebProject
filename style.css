@@ -313,58 +313,71 @@ body{
 	
 	font-family: sans-serif;
 }
-.log{
-
-	width: 320px;
-	height: 375px;
-	background: #000;
-	color: #fff;
-	top: 50%;
-	left: 50%;
-	position: absolute;
-	transform: translate(-50%,-50%);
-	box-sizing: border-box;
-	padding: 70px 20px;
+#login-form{
+  font:white;
+  background-color: #000;
+  height: 235px;
+  width:300px;
+  padding: 70px 10px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left:50%;
+}
+#l1{
+  font-family: sans-serif;
+  transform: translate(0%,-483%);
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
 }
 .avatar{
 
-width: 100px;
 height: 100px;
-/*border-radius: 50%;*/
-position: absolute;
-top: -50px;
-left: calc(33%);
-}
+width:100px;
+transform: translate(-4%,-120%);
 
+}
+#sid{
+  color: #ffffff;
+  transform: translate(-19% ,-1085%);
+  font-weight: bold;
+  font-family: sans-serif;
+}
+#user_id{
+  transform: translate(0%,-1290%);
+  border:none; 
+  border-bottom:1px solid #fff;
+  background: transparent;
+  outline: none;
+  height:12px;
+  width: 200px;
+  color: #fff;
+  font-size: 12px;
+}
+#user_pass{
+  transform: translate(0%,-1282%);
+  border:none; 
+  border-bottom:1px solid #fff;
+  background: transparent;
+  outline: none;
+  height:12px;
+  width: 200px;
+  color: #fff;
+  font-size: 12px;
+}
+#sub{
+  transform: translate(-3%,77%);
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 200px;
+  background: green;
+  color: #fff;
+  font-size: 18px;
+  border-radius:30px;
 
-.log p{
-	margin:0px; 
-	padding:0px;
-	font-weight: bold;
 }
-.log input{
-	width: 200px;
-	margin: 20px;
-}
-.log input[type="text"],input[type="password"]{
-	border:none; 
-	border-bottom:1px solid #fff;
-	background: transparent;
-	outline: none;
-	height:12px;
-	color: #fff;
-	font-size: 12px;
-}
-.log input[type="submit"]{
-	border: none;
-	outline: none;
-	height: 50px;
-	background: green;
-	color: #fff;
-	font-size: 18px;
-	border-radius:30px;
-}
-
 
 
 
