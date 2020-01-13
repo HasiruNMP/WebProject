@@ -35,3 +35,7 @@ function goback() {
   window.history.back();
 }
 
+function orderpage(){
+  window.open("orders.php");
+}
+
