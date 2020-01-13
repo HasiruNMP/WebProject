@@ -72,10 +72,10 @@
                 
                     echo"<select name=\"color\">
                             <option value=\"null\">Choose Color</option>
-                            <option value=\" ".$row["Color1"]." \" style=\"background-color: ".$row["Color1"].";\";>'".$row["Color1"]."'</option>
-                            <option value=\" ".$row["Color2"]." \" style=\"background-color: ".$row["Color2"].";\";>'".$row["Color2"]."'</option>
-                            <option value=\" ".$row["Color3"]." \" style=\"background-color: ".$row["Color3"].";\";>'".$row["Color3"]."'</option>
-                            <option value=\" ".$row["Color4"]." \" style=\"background-color: ".$row["Color4"].";\";>'".$row["Color4"]."'</option>
+                            <option value=\"".$row["Color1"]."\" style=\"background-color: ".$row["Color1"].";\";>'".$row["Color1"]."'</option>
+                            <option value=\"".$row["Color2"]."\" style=\"background-color: ".$row["Color2"].";\";>'".$row["Color2"]."'</option>
+                            <option value=\"".$row["Color3"]."\" style=\"background-color: ".$row["Color3"].";\";>'".$row["Color3"]."'</option>
+                            <option value=\"".$row["Color4"]."\" style=\"background-color: ".$row["Color4"].";\";>'".$row["Color4"]."'</option>
                         </select>";
 
                         }
@@ -90,8 +90,8 @@
             </tr>
             <tr>
                 <td>Gender</td>
-                <td><input type="radio" name="gender" value="male"> Male
-                    <input type="radio" name="gender" value="female"> Female</td>
+                <td><input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female</td>
             </tr>
             <tr>
                 <td>Size</td>
@@ -122,7 +122,7 @@
                     $size = $_REQUEST['size'];
 
 
-                    $sql="SELECT * FROM 'orders' WHERE 'ProdID' = $pid AND 'Color' = $color AND 'Gender' = $gender AND 'Size' = $size;";
+                    $sql="SELECT * FROM `orders` WHERE `ProductID`='$pid' AND `Color`='$color' AND `Size`='$size' AND `Gender`='$gender';";
 
                    // $sql="SELECT , $color, $gender, $size FROM orders;";
 
@@ -130,8 +130,8 @@
                     {
                     // Return the number of rows in result set
                     $rowcount=mysqli_num_rows($result);
-                    echo $rowcount;
-                    printf("Result set has %d rows.\n",$rowcount);
+
+                    printf(" %d Orders.\n",$rowcount);
                     // Free result set
                     mysqli_free_result($result);
                     }
