@@ -1,4 +1,6 @@
 <html>
+<link rel="shortcut icon" type="image/x-icon" href="Photos/logo1.png" />
+<link rel="stylesheet" type="text/css" href="style.css">
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
