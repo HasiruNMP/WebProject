@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<link rel="shortcut icon" type="image/x-icon" href="Photos/logo1.png" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Order details</title>
 </head>
 <body>
 
@@ -41,7 +43,7 @@ $query="INSERT INTO tshirts (Theme, prodID, Material, Color1, Color2, Color3, Co
 
 ?>
 
-<h1> Thankyour For ordering </h1>
+<h1> Thank you for ordering </h1>
 
 </body>
 </html>
