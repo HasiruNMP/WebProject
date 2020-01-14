@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tshirt1 </title>
+	<title>Storing order details </title>
 	<link rel="shortcut icon" type="image/x-icon" href="Photos/logo1.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
