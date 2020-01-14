@@ -72,7 +72,7 @@ $query="INSERT INTO orders (Theme, StudentID, Gender, ContactNO, ProductID, Mate
 <div>
 
 
-<h1> Thankyour For ordering </h1>
+<h1> Thank you For ordering </h1>
 </div>
 
 
