@@ -77,7 +77,7 @@
                 <td><input type="text" name="productid"></td>   
             </tr>
             <tr>
-                <td colspan='2'><input type="submit" name="Submit" value="Get colors"></td>
+                <td colspan='2'><input class="button3" type="submit" name="Submit" value="Get colors"></td>
             </tr>
         </form>
         <form method="post" action="#">
@@ -135,7 +135,7 @@
                     <input type="radio" name="size" value="XXL">XXL</td>
             </tr>
             <tr>
-                <td colspan=2><input type="submit" name="submit" value="View Order Count"></td>
+                <td colspan=2><input class="button3" type="submit" name="submit" value="View Order Count"></td>
                 </form>
             </tr>
             <tr>
