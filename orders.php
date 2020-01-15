@@ -7,9 +7,9 @@
     <head>
         <meta charset="utf-8">
         <title>Check orders </title>
-    <link rel="shortcut icon" type="image/x-icon" href="Photos/logo1.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/logo1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
@@ -18,10 +18,10 @@
     <table class="site">
     <tr class="top">
         <td class="head"><!--Name of the site-->
-            <img src="Photos/tshirtlogo.png"style="width:310px;height: auto;" >
+            <img src="../images/tshirtlogo.png"style="width:310px;height: auto;" >
         </td>
         <td class="logo"><!--logo class-->
-            <img src="Photos/nsbmlogo.png"style="width:310px;height: auto;" >
+            <img src="../images/nsbmlogo.png"style="width:310px;height: auto;" >
         </td>
     </tr>
     
@@ -32,7 +32,7 @@
       <tr>
         
         <td><button class="button" style="vertical-align:middle" onclick="adminlogin()"><span>Admin Login</span></button></td>
-        <td><button class="button" style="vertical-align:middle" onclick="studentlogin()"><span>Log Out</span></button></td>
+        <td><button class="button" style="vertical-align:middle" onclick="window.location.href='../login/logout.php'"><span>Log Out</span></button></td>
         <td><button class="button" style="vertical-align:middle" onclick="window.location.href='#contact'"><span>Contact Us</span></button></td>
       </tr>
     </table>

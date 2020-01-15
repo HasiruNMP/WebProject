@@ -1,7 +1,7 @@
 function customerpage() 
 	{
     this.close();
-  		window.open("customerpage.html");
+  		window.open("index.php");
   	}
 
 function studentlogin() 
@@ -30,6 +30,13 @@ function adminlogin()
       window.open("js_validation.html");
     }
 
+function adminlogin2() 
+{
+  this.close();
+    window.open("js_validation.html");
+  }
+  
+
 function goback() {
   this.close();
   window.history.back();
@@ -38,4 +45,3 @@ function goback() {
 function orderpage(){
   window.open("orders.php");
 }
-

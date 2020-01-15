@@ -388,7 +388,7 @@ transform: translate(-4%,-120%);
 
 .g
 {
-    background-image: url("Photos/notice.jpg");
+    background-image: url("../images/notice.jpg");
     background-repeat: no-repeat;
     width: 1000px;
     height: 650px;
@@ -468,7 +468,7 @@ width:100px;"
 
 body
 {
-  background-image: url(Photos/background.jpg);
+  background-image: url('../images/background.jpg');
   background-repeat: no-repeat;
   background-size:100%;
   background-position: center;

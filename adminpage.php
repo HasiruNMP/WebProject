@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="shortcut icon" type="image/x-icon" href="Photos/logo1.png" />
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../images/logo1.png" />
+	<link rel="stylesheet" type="text/css" href="../styles/style.css">
 	<title>Order details</title>
 </head>
 <body>
