@@ -68,12 +68,12 @@
         ?>
         <div>
         <form method="get" action="#">
-        <table border='1'>
+        <table border='1' id="countorders" align="center">
             <tr>
-                <td colspan=2>View Order Count</td>
+                <th colspan=2>View Order Count</th>
             </tr>
             <tr>
-                <td>Product ID</td>
+                <th>Product ID</th>
                 <td><input type="text" name="productid"></td>   
             </tr>
             <tr>
@@ -83,7 +83,7 @@
         <form method="post" action="#">
             
             <tr>
-                <td>Color</td>
+                <th>Color</th>
                 <td>
                     <?php
                     error_reporting(0);
@@ -122,12 +122,12 @@
                 </td>
             </tr>
             <tr>
-                <td>Gender</td>
+                <th>Gender</th>
                 <td><input type="radio" name="gender" value="Male"> Male
                     <input type="radio" name="gender" value="Female"> Female</td>
             </tr>
             <tr>
-                <td>Size</td>
+                <th>Size</th>
                 <td><input type="radio" name="size" value="S">S   
                     <input type="radio" name="size" value="M">M
                     <input type="radio" name="size" value="L">L
@@ -139,7 +139,7 @@
                 </form>
             </tr>
             <tr>
-                <td colspan=2>
+                <th colspan=2>
 
                 <?php
                     $con=mysqli_connect("localhost","root","","nsbmtshirts");
@@ -178,7 +178,7 @@
 
 
 
-                </td>  
+                </th>  
             </tr>
 
 

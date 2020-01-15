@@ -492,3 +492,13 @@ body
   padding-bottom: 5px;
   border-radius: 5%;
 }
+
+/*order.php page*/
+#countorders
+{
+  width:800px;
+  height:500px;
+  background-color:;
+  text-align:center;
+  border-radius:20px;
+}
