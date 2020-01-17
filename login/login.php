@@ -7,11 +7,9 @@
 </head>
 <body>
 
-<h3><center>NSBM T-shirts</center></h3>
-<center><h4>Login using your Student ID & Password</h4></center>
     <form id="login-form" method="post" action="#" ><center>
         <img src="../images/logo1.png" class="avatar">
-        <p id="l1">LOGIN HERE</p>
+        <p id="l1">NSBM T-SHIRTS</p>
         <table>
 
             <tr>
@@ -88,7 +86,7 @@ else
 }
 }
 ?>
-
+</center>
 
 </body>
 </html> 
