@@ -1,3 +1,16 @@
+<?php
+session_start();
+if ( isset( $_SESSION['adminpw'] ) ) 
+{}
+else 
+{
+	//$_SESSION['current_page2'] = $_SERVER['REQUEST_URI'];
+	header("Location: adminlogin.php");
+	exit;
+}
+?>
+
+
 <html>
 
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->

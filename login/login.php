@@ -41,6 +41,11 @@
         </table>
     </form>
 
+<a href="../admin/adminlogin.php"> Admin Login </a>
+
+
+
+
 <?php
    ob_start();
    session_start();
