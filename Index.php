@@ -15,7 +15,7 @@ else
 <head>
 	<link rel="shortcut icon" type="image/x-icon" href="images/logo1.png" />
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<script src="admin/javascript.js"></script>
+	<script src="js/javascript.js"></script>
 	<title>Customer Page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,7 +39,7 @@ else
 	<table class="clearfix" align="center">
       <tr>
       	
-        <td><button class="button" style="vertical-align:middle" onclick="adminlogin2()"><span>Admin Login</span></button></td>
+        <td><button class="button" style="vertical-align:middle" onclick="adminlogin()"><span>Admin Login</span></button></td>
         <td><button class="button" style="vertical-align:middle" onclick="window.location.href='login/logout.php'"><span>Log Out</span></button></td>
         <td><button class="button" style="vertical-align:middle" onclick="window.location.href='#contact'"><span>Contact Us</span></button></td>
       </tr>
