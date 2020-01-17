@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 12, 2020 at 12:58 PM
+-- Generation Time: Jan 17, 2020 at 07:54 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.26
 
@@ -38,7 +38,8 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`username`, `password`) VALUES
-('admin1', 'pw1');
+('admin1', 'pw1'),
+('test', 'test');
 
 -- --------------------------------------------------------
 
@@ -58,6 +59,18 @@ CREATE TABLE `orders` (
   `Size` varchar(20) NOT NULL,
   `Price` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`OrderID`, `Theme`, `StudentID`, `Gender`, `ContactNO`, `ProductID`, `Material`, `Color`, `Size`, `Price`) VALUES
+(1, 'Event3', '21006502', 'Male', 702435206, 'SE1003', 'Cotton', '#ff0000', 'M', 'Rs.1000'),
+(2, 'Event3', '21006502', 'Male', 702435206, 'SE1003', 'Cotton', '#0000ff', 'S', 'Rs.1000'),
+(3, 'Event3', '21006502', 'Male', 702435206, 'SE1003', 'Cotton', '#ff0000', 'M', 'Rs.1000'),
+(4, 'Event1', '21006502', 'Male', 702435206, 'SE1001', 'Cotton', '#ffff80', 'M', 'Rs.1000'),
+(5, 'Event1', '21006502', 'Male', 702435206, 'SE1001', 'Cotton', '#ffff80', 'M', 'Rs.1000'),
+(6, 'Event2', '21006502', 'Male', 701234567, 'SE1002', 'Silk', '#ff8000', 'L', 'Rs.1000');
 
 -- --------------------------------------------------------
 
@@ -80,7 +93,8 @@ INSERT INTO `students` (`stuid`, `password`) VALUES
 ('21009439', 'password'),
 ('21006863', 'password'),
 ('21009419', 'password'),
-('21010128', 'password');
+('21010128', 'password'),
+('test', 'test');
 
 -- --------------------------------------------------------
 
@@ -110,7 +124,8 @@ INSERT INTO `tshirts` (`Theme`, `prodID`, `Material`, `Color1`, `Color2`, `Color
 ('Event3', 'SE1003', 'Cotton', '#0000ff', '#008000', '#ff8000', '#ff0000', '1000', 766807668),
 ('Event4', 'SE1004', 'Cotton', '#0000ff', '#008000', '#ff8000', '#ff0000', '1000', 766807668),
 ('Event5', 'SE1005', 'Cotton', '#ffff00', '#ff80ff', '#ff8000', '#ff0000', '1000', 766807668),
-('nsmb', 'SE1040', 'Cotton', '#000000', '#000000', '#000000', '#000000', '100', 766807668);
+('nsmb', 'SE1040', 'Cotton', '#000000', '#000000', '#000000', '#000000', '100', 766807668),
+('test', 'test', 'Cotton', '#000000', '#000000', '#000000', '#000000', '1000', 701234567);
 
 --
 -- Indexes for dumped tables
@@ -130,7 +145,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `OrderID` int(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `OrderID` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
