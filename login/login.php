@@ -1,24 +1,15 @@
+<!DOCTYPE html >
 <html>
 <head>
 <title>NSBM T-shirts Login</title>
 <link rel="shortcut icon" type="image/x-icon" href="../images/logo1.png" />
 <link rel="stylesheet" type="text/css" href="../styles/style.css">
 </head>
-
 <body>
-        <table class="site">
-    <tr class="top">
-        <td class="head"><!--Name of the site-->
-            <img src="../images/tshirtlogo.png"style="width:310px;height: auto;" >
-        </td>
-        <td class="logo"><!--logo class-->
-            <img src="../images/nsbmlogo.png"style="width:310px;height: auto;" >
-        </td>
-    </tr>
-    
-    </table>
 
-    <form id="login-form" method="post" action="#"><center>
+<h3><center>NSBM T-shirts</center></h3>
+<center><h4>Login using your Student ID & Password</h4></center>
+    <form id="login-form" method="post" action="#" ><center>
         <img src="../images/logo1.png" class="avatar">
         <p id="l1">LOGIN HERE</p>
         <table>
@@ -26,7 +17,7 @@
             <tr>
                 <td><p align="left" id="sid">Student ID</p>
                     <input type="text" name="studentid" id="user_id" placeholder="                Student ID"></td>  
-                
+
             </tr>
 
             <tr>
@@ -35,18 +26,14 @@
             </tr>
 
             <tr>
-                <input type="submit" class="submit" name="submit" value="login" id="sub">
+                <input type="submit" name="submit" class="submit" value="login" id="sub">
             </tr>
 
         </table>
     </form>
+    <a href="../admin/adminlogin.php"> Admin Login </a>
 
-<a href="../admin/adminlogin.php"> Admin Login </a>
-
-
-
-
-<?php
+    <?php
    ob_start();
    session_start();
     
@@ -92,7 +79,7 @@ if ($stuid = $stuid2 && $pass = $password2)
    $_SESSION['stuid'] = $stuid2;
    $_SESSION['password'] = $password2;
    
-   echo 'You have entered valid use name and password';
+   echo 'You have entered valid username and password';
    header("Location: ". $_SESSION['current_page']);
 }
 else 
@@ -101,12 +88,7 @@ else
 }
 }
 ?>
-    <div id="contact" class="contact"><!--contacting options-->
-    <p ><u><center>Contact Us</center></u></p>
-    <p><center>tshirts@nsbm.com</center></p>
-    <p><center>011-1231235</center></p>
-</div>
 
 
 </body>
-</html>
+</html> 
