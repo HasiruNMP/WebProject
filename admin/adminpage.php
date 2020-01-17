@@ -34,7 +34,7 @@ else
 </table>
 	<table class="nav clearfix" align="center">
       <tr>
-        <td><button class="button clearfix" style="vertical-align:middle" onclick="window.location.href = '../login/logout.php'"><span>Log Out</span></button></td>
+        <td><button class="button clearfix" style="vertical-align:middle" onclick="window.location.href = '../admin/adminlogout.php'"><span>Log Out</span></button></td>
         <td><button class="button clearfix" style="vertical-align:middle" onclick="window.location.href = 'orders.php'"><span>Check Orders</span></button></td>
       </tr>
     </table>
