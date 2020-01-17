@@ -67,22 +67,15 @@ $query="INSERT INTO orders (Theme, StudentID, Gender, ContactNO, ProductID, Mate
 	
 	</table>
 
-	<div>
-	<table class="clearfix" align="center">
-      <tr>
-      	
-        <td><button class="button" style="vertical-align:middle" onclick="adminlogin()"><span>Admin Login</span></button></td>
-        <td><button class="button" style="vertical-align:middle" onclick="window.location.href='../login/logout.php'"><span>Log Out</span></button></td>
-        <td><button class="button" style="vertical-align:middle" onclick="window.location.href='#contact'"><span>Contact Us</span></button></td>
-      </tr>
-    </table>
-</div>
+	
 	<hr>
 
 <div>
 
-
-<h1> Thank you For ordering </h1>
+<center>
+<h1> Thank you For ordering! </h1>
+<a href="../index.php"> <input class="button" type="button" value="Back To Home Page" name="reset"> </a> 
+</center>
 </div>
 
 
