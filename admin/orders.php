@@ -42,9 +42,7 @@ else
     <div>
     <table class="clearfix" align="center">
       <tr>
-        
-        <td><button class="button" style="vertical-align:middle" onclick="adminlogin()"><span>Admin Login</span></button></td>
-        <td><button class="button" style="vertical-align:middle" onclick="window.location.href='../login/logout.php'"><span>Log Out</span></button></td>
+        <td><button class="button" style="vertical-align:middle" onclick="window.location.href='../admin/adminpage.php'"><span>Back</span></button></td>
         <td><button class="button" style="vertical-align:middle" onclick="window.location.href='#contact'"><span>Contact Us</span></button></td>
       </tr>
     </table>
