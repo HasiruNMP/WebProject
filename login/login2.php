@@ -76,7 +76,7 @@ if ($stuid = $stuid2 && $pass = $password2)
    $_SESSION['password'] = $password2;
    
    echo 'You have entered valid username and password';
-   header("Location: ../index.php");
+   header("Location: ". $_SESSION['current_page']);
 }
 else 
 {

@@ -23,9 +23,9 @@
 		
 		<center><h1>LOGIN HERE</h1></center></td>
 		<tr>
-		<form method="post" id="loginpage" name="frm_1" action="#"><center>
+		<form method="post" id="loginpage" name="frm_1" action="adminlogin.php"><center>
 			<td><P>Username</P></td>
-			<td><input type="text" name="uname" placeholder="            Enter Username"></td>
+			<td><input type="text" name="adminun" placeholder="            Enter Username"></td>
 		</tr>
 		<tr>
 			<td><p>Password</p></td>
@@ -46,28 +46,48 @@
 <?php
    ob_start();
    session_start();
-
+    
 //error_reporting(0);
 
-if (isset($_POST["uname"]) AND isset($_POST["adminpw"])) 
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "nsbmtshirts";
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) 
 {
-$adminun= $_POST['uname'];
+   die("Connection failed: " . $conn->connect_error);
+}
+//echo "Connected successfully";
+
+if (isset($_POST["adminun"]) AND isset($_POST["adminpw"])) {
+$adminun= $_POST['adminun'];
 $adminpw= $_POST['adminpw'];
 
-echo $adminun , $adminpw;
+$sql = "SELECT * FROM `admins` WHERE `username` = '$adminun' AND `password` = '$adminpw';";
+echo $sql;
+$result = $conn->query($sql);
 
-$adminun2 = 'admin';
-$adminpw2 = 'admin';
+if ($result->num_rows > 0) {
+// output data of each row
+$row = $result->fetch_assoc();
+echo $row['username'];
+echo $row['password'];
+$adminun2 = $row['username'];
+$adminpw2 = $row['password'];
+}
 
+echo $adminun2;
+echo $adminpw2;
 
 if ($adminun = $adminun2 && $adminpw = $adminpw2) 
 {
-   $_SESSION['valid'] = true;
-   $_SESSION['timeout'] = time();
-   $_SESSION['adminun'] = $adminun;
-   $_SESSION['adminpw'] = $adminpw;
+   $_SESSION['adminun'] = $adminun2;
+   $_SESSION['adminpw'] = $adminpw2;
    
-   //echo 'You have entered valid use name and password';
+   echo 'You have entered valid username and password';
    header("Location: adminpage.php");
 }
 else 
@@ -75,7 +95,6 @@ else
    echo 'Wrong username or password';
 }
 }
-
 ?>
 
 

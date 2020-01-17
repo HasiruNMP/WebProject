@@ -3,7 +3,7 @@ session_start();
 if ( isset( $_SESSION['password'] ) ) {
 } else {
 	$_SESSION['current_page'] = $_SERVER['REQUEST_URI'];
-    header("Location: ../login/login.php");
+    header("Location: ../login/login2.php");
 }
 ?>
 
