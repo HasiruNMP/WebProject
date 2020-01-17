@@ -72,9 +72,10 @@ $query="INSERT INTO orders (Theme, StudentID, Gender, ContactNO, ProductID, Mate
 
 <div>
 
-
+<center>
 <h1> Thank you For ordering! </h1>
-<a href="../index.php"> <input type="button" value="Back To Home Page" name="reset"> </a> 
+<a href="../index.php"> <input class="button" type="button" value="Back To Home Page" name="reset"> </a> 
+</center>
 </div>
 
 
