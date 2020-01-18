@@ -11,7 +11,7 @@ if ( isset( $_SESSION['password'] ) ) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Storing order details </title>
+	<title>Confirmation</title>
 	<link rel="shortcut icon" type="image/x-icon" href="../images/logo1.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../styles/style.css">
@@ -73,7 +73,7 @@ $query="INSERT INTO orders (Theme, StudentID, Gender, ContactNO, ProductID, Mate
 <div>
 
 <center>
-<h1> Thank you For ordering! </h1>
+<h1> Your order has been sucessfully recorded ! </h1>
 <a href="../index.php"> <input class="button" type="button" value="Back To Home Page" name="reset"> </a> 
 </center>
 </div>
