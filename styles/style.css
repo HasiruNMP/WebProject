@@ -495,11 +495,11 @@ body
 /*order.php page*/
 #countorders
 {
-  width:800px;
-  height:500px;
-  background-color:;
+  width:600px;
+  height:400px;
+  background-color:#d0f582;
   text-align:center;
-  border-radius:20px;
+  border:solid #313193;
 }
 
 
