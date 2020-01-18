@@ -18,6 +18,12 @@ else
 	<link rel="shortcut icon" type="image/x-icon" href="../images/logo1.png" />
 	<link rel="stylesheet" type="text/css" href="../styles/style.css">
 	<script src="../js/javascript.js"></script>
+	<script>
+		function confirmdata()
+		{
+  			window.confirm("Are you sure you want to place this record?");
+		}
+	</script>
 </head>
 <body>
 
@@ -108,7 +114,7 @@ else
 			<td><input type="file" name="tback" id="tside" ></td>
 		</tr>
 		<tr>
-			<td></td><td><input type="reset" name="reset" value="reset" class="reset"><input type="submit" name="submit" value="submit" class="submit"></td>
+			<td></td><td><input type="reset" name="reset" value="reset" class="reset"><input type="submit" name="submit" value="submit" class="submit" onclick="confirmdata()"></td>
 		</tr>
 		
 		</table>

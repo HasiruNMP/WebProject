@@ -7,6 +7,7 @@
 </head>
 <body>
 
+
 <table class="site">
 	<tr class="top">
 		<td class="head"><!--Name of the site-->
@@ -65,7 +66,7 @@ $query="INSERT INTO tshirts (Theme, prodID, Material, Color1, Color2, Color3, Co
 
 <center>
 <h1>  </h1>
-<a href="../adminpage.php"> <input class="button" type="button" value="Back To Admin Page" name="reset"> </a> 
+<a href="adminpage.php"> <input class="button" type="button" value="Back To Admin Page" name="reset"> </a> 
 </center>
 </div>
 

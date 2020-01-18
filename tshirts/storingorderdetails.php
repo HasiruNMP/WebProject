@@ -15,7 +15,7 @@ if ( isset( $_SESSION['password'] ) ) {
 	<link rel="shortcut icon" type="image/x-icon" href="../images/logo1.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../styles/style.css">
-	
+</head>
 <body>
 
 <table class="site">
