@@ -187,12 +187,11 @@ a:hover
   #tright
 {
   padding-left:2%;
-  width:47%;
+  width:30%;
   height:500px;
-  background-color:;
+  background-color:rgba(17, 32, 104,0.4);
   float:right;
-
-
+  margin-right: 190px;
 }
 
 
