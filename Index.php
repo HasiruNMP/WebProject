@@ -101,41 +101,41 @@ function showSlides() {
 <div class="imgs clearfix"> <!-- selling items-->
 	<center><table>
 	<tr><td class="cols"><!--linked images-->
-		<a href="tshirts/Tshirtpage1.php"><img src="images/black 2 front.jpg" alt="tshirt1" style="width:300px;height:300px" class="zoom";> <P><center>tshirt</center></P>
+		<a href="tshirts/Tshirtpage1.php"><img src="images/black 2 front.jpg" alt="tshirt1" style="width:300px;height:300px" class="zoom";> <h3><center>Event 1</center></h3>
 		</a>
 		</td>
 		<td class="cols"><!--linked images-->
-		<a href="tshirts/Tshirtpage2.php"><img src="images/black front.jpg" alt="tshirt2" style="width:300px;height:300px" class="zoom";><P><center>tshirt</center></P>
+		<a href="tshirts/Tshirtpage2.php"><img src="images/black front.jpg" alt="tshirt2" style="width:300px;height:300px" class="zoom";><h3><center>Event 2</center></h3>
 		</a>
 		</td>
 		<td class="cols"><!--linked images-->
-		<a href="tshirts/Tshirtpage3.php"><img src="images/blue front.jpg" alt="tshirt3" style="width:300px;height:300px"class="zoom";><P><center>tshirt</center></P>
+		<a href="tshirts/Tshirtpage3.php"><img src="images/blue front.jpg" alt="tshirt3" style="width:300px;height:300px"class="zoom";><h3><center>Event 3</center></h3>
 		</a>
 		</td>
 	</tr>
 	<tr><td class="cols"><!--linked images-->
-		<a href="tshirts/Tshirtpage4.php"><img src="images/pink front.jpg" alt="tshirt4" style="width:300px;height:300px" class="zoom";><P><center>tshirt</center></P>
+		<a href="tshirts/Tshirtpage4.php"><img src="images/pink front.jpg" alt="tshirt4" style="width:300px;height:300px" class="zoom";><h3><center>Event 4</center></h3>
 		</a>
 		</td>
 		<td class="cols"><!--linked images-->
-		<a href="tshirts/Tshirtpage5.php"><img src="images/red front.jpg" alt="tshirt5" style="width:300px;height:300px"class="zoom";><P><center>tshirt</center></P>
+		<a href="tshirts/Tshirtpage5.php"><img src="images/red front.jpg" alt="tshirt5" style="width:300px;height:300px"class="zoom";><h3><center>Event 5</center></h3>
 		</a>
 		</td>
 		<td class="cols"><!--linked images-->
-		<a href="#"><img src="images/noimg.jpeg" alt="tshirt6" style="width:300px;height:300px"class="zoom";><P><center>tshirt</center></P>
+		<a href="#"><img src="images/noimg.jpeg" alt="tshirt6" style="width:300px;height:300px"class="zoom";><h3><center>Event 6</center></h3>
 		</a>
 		</td>
 	</tr>
 	<tr><td class="cols"><!--linked images-->
-		<a href="#"><img src="images/noimg.jpeg" alt="tshirt7" style="width:300px;height:300px"class="zoom";><P><center>tshirt</center></P>
+		<a href="#"><img src="images/noimg.jpeg" alt="tshirt7" style="width:300px;height:300px"class="zoom";><h3><center>Event 7</center></h3>
 		</a>
 		</td>
 		<td class="cols"><!--linked images-->
-		<a href="#"><img src="images/noimg.jpeg" alt="tshirt8" style="width:300px;height:300px"class="zoom";><P><center>tshirt</center></P>
+		<a href="#"><img src="images/noimg.jpeg" alt="tshirt8" style="width:300px;height:300px"class="zoom";><h3><center>Event 8</center></h3>
 		</a>
 		</td>
 		<td class="cols"><!--linked images-->
-		<a href="#"><img src="images/noimg.jpeg" alt="tshirt9" style="width:300px;height:300px"class="zoom";><P><center>tshirt</center></P>
+		<a href="#"><img src="images/noimg.jpeg" alt="tshirt9" style="width:300px;height:300px"class="zoom";><h3><center>Event 9</center></h3>
 		</a>
 		</td>
 	</tr>
