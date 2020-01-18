@@ -7,6 +7,21 @@
 </head>
 <body>
 
+<table class="site">
+	<tr class="top">
+		<td class="head"><!--Name of the site-->
+			<img src="../images/tshirtlogo.png"style="width:310px;height: auto;" >
+		</td>
+		<td class="logo"><!--logo class-->
+			<img src="../images/nsbmlogo.png"style="width:310px;height: auto;" >
+		</td>
+	</tr>
+	
+	</table>
+
+	
+	<hr>
+
 <?php
 
 $connection= mysqli_connect("localhost","root","");
@@ -34,7 +49,7 @@ $query="INSERT INTO tshirts (Theme, prodID, Material, Color1, Color2, Color3, Co
 
  if($connection->query($query))
  {
- 	echo "record added successfully";
+ 	echo "<h1><center>Records Added Successfully!</center></h1>";
  }
  else
  	echo "error";
@@ -43,7 +58,26 @@ $query="INSERT INTO tshirts (Theme, prodID, Material, Color1, Color2, Color3, Co
 
 ?>
 
-<h1> Thank you for ordering </h1>
+
+	
+
+<div>
+
+<center>
+<h1>  </h1>
+<a href="../adminpage.php"> <input class="button" type="button" value="Back To Admin Page" name="reset"> </a> 
+</center>
+</div>
+
+
+
+<div id="contact" class="contact"><!--contacting options-->
+	<p ><u><center>Contact Us</center></u></p>
+	<p><center>tshirts@nsbm.com</center></p>
+	<p><center>011-1231235</center></p>
+</div>
+
+	
 
 </body>
 </html>

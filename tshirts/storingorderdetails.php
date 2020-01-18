@@ -15,9 +15,23 @@ if ( isset( $_SESSION['password'] ) ) {
 	<link rel="shortcut icon" type="image/x-icon" href="../images/logo1.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../styles/style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+	
 <body>
+
+<table class="site">
+	<tr class="top">
+		<td class="head"><!--Name of the site-->
+			<img src="../images/tshirtlogo.png"style="width:310px;height: auto;" >
+		</td>
+		<td class="logo"><!--logo class-->
+			<img src="../images/nsbmlogo.png"style="width:310px;height: auto;" >
+		</td>
+	</tr>
+	
+	</table>
+
+	
+	<hr>
 
 	<?php
 
@@ -44,7 +58,7 @@ $query="INSERT INTO orders (Theme, StudentID, Gender, ContactNO, ProductID, Mate
 
  if($connection->query($query))
  {
- 	echo "record added successfully";
+ 	echo "<h1><center>Your order has been sucessfully recorded !</center></h1>";
  }
  else
  	echo "error";
@@ -55,25 +69,12 @@ $query="INSERT INTO orders (Theme, StudentID, Gender, ContactNO, ProductID, Mate
 
 
 
-	<table class="site">
-	<tr class="top">
-		<td class="head"><!--Name of the site-->
-			<img src="../images/tshirtlogo.png"style="width:310px;height: auto;" >
-		</td>
-		<td class="logo"><!--logo class-->
-			<img src="../images/nsbmlogo.png"style="width:310px;height: auto;" >
-		</td>
-	</tr>
 	
-	</table>
-
-	
-	<hr>
 
 <div>
 
 <center>
-<h1> Your order has been sucessfully recorded ! </h1>
+<h1>  </h1>
 <a href="../index.php"> <input class="button" type="button" value="Back To Home Page" name="reset"> </a> 
 </center>
 </div>
