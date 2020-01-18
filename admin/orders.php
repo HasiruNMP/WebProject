@@ -50,7 +50,8 @@ else
 </div>
     <hr>
 
-
+	<br>
+	<br>
 
 
 
@@ -198,7 +199,7 @@ else
         </form>
     </div>
 
-
+<br>
 <div id="contact" class="contact"><!--contacting options-->
     <p ><u><center>Contact Us</center></u></p>
     <p><center>tshirts@nsbm.com</center></p>
