@@ -34,7 +34,7 @@ $query="INSERT INTO tshirts (Theme, prodID, Material, Color1, Color2, Color3, Co
 
  if($connection->query($query))
  {
- 	echo "record added successfully";
+ 	echo "Record added successfully!";
  }
  else
  	echo "error";
@@ -43,7 +43,6 @@ $query="INSERT INTO tshirts (Theme, prodID, Material, Color1, Color2, Color3, Co
 
 ?>
 
-<h1> Thank you for ordering </h1>
 
 </body>
 </html>
