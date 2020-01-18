@@ -14,13 +14,13 @@
 
             <tr>
                 <td><p align="left" id="sid">Student ID</p>
-                    <input type="text" name="studentid" id="user_id" placeholder="                Student ID"></td>  
+                    <input type="text" name="studentid" id="user_id" placeholder="                Student ID"></td>
 
             </tr>
 
             <tr>
                 <td><p align="left" id="sid">Password</p>
-                    <input type="password" name="password" id="user_pass" placeholder="                  Password"></input></td>   
+                    <input type="password" name="password" id="user_pass" placeholder="                  Password"></input></td>
             </tr>
 
             <tr>
@@ -30,12 +30,13 @@
         </table>
     </form>
     <a href="../admin/adminlogin.php"> Admin Login </a>
+    <br><br><br>
 
     <?php
    ob_start();
    session_start();
-    
-//error_reporting(0);
+
+error_reporting(0);
 
 $servername = "localhost";
 $username = "root";
@@ -44,7 +45,7 @@ $dbname = "nsbmtshirts";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
-if ($conn->connect_error) 
+if ($conn->connect_error)
 {
    die("Connection failed: " . $conn->connect_error);
 }
@@ -55,36 +56,36 @@ $stuid= $_POST['studentid'];
 $password= $_POST['password'];
 
 $sql = "SELECT * FROM `students` WHERE `stuid` = '$stuid' AND `password` = '$password';";
-echo $sql;
+//echo $sql;
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
 // output data of each row
 $row = $result->fetch_assoc();
-echo $row['stuid'];
-echo $row['password'];
+//echo $row['stuid'];
+//echo $row['password'];
 $stuid2 = $row['stuid'];
 $password2 = $row['password'];
 }
 
-echo $stuid2;
-echo $password2;
+//echo $stuid2;
+//echo $password2;
 
-if ($stuid = $stuid2 && $pass = $password2) 
+if ($stuid = $stuid2 && $pass = $password2)
 {
    $_SESSION['stuid'] = $stuid2;
    $_SESSION['password'] = $password2;
-   
+
    echo 'You have entered valid username and password';
    header("Location: ../index.php");
 }
-else 
+else
 {
-   echo 'Wrong username or password';
+   echo "<br><p style='background-color:rgba(255,0,0,0.5); color='red';'> <b>Wrong username or password!<br>Enter again! </b>";
 }
 }
 ?>
 </center>
 
 </body>
-</html> 
+</html>
