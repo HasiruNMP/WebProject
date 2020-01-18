@@ -20,7 +20,7 @@
 
 	<table class="log" align="center">
 		<tr><td colspan="2">
-		
+
 		<center><h1>LOGIN HERE</h1></center></td>
 		<tr>
 		<form method="post" id="loginpage" name="frm_1" action="adminlogin.php"><center>
@@ -33,9 +33,9 @@
 		</tr>
 		<tr><td colspan="2" align="center">
 			<input type="submit" class="submit" name="submit" value="Login">
-			
+
 		</form>
-		
+
 		</center>
 		</td></tr>
 	</table>
@@ -46,8 +46,8 @@
 <?php
    ob_start();
    session_start();
-    
-//error_reporting(0);
+
+error_reporting(0);
 
 $servername = "localhost";
 $username = "root";
@@ -56,7 +56,7 @@ $dbname = "nsbmtshirts";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
-if ($conn->connect_error) 
+if ($conn->connect_error)
 {
    die("Connection failed: " . $conn->connect_error);
 }
@@ -67,32 +67,32 @@ $adminun= $_POST['adminun'];
 $adminpw= $_POST['adminpw'];
 
 $sql = "SELECT * FROM `admins` WHERE `username` = '$adminun' AND `password` = '$adminpw';";
-echo $sql;
+//echo $sql;
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
 // output data of each row
 $row = $result->fetch_assoc();
-echo $row['username'];
-echo $row['password'];
+//echo $row['username'];
+//echo $row['password'];
 $adminun2 = $row['username'];
 $adminpw2 = $row['password'];
 }
 
-echo $adminun2;
-echo $adminpw2;
+//echo $adminun2;
+//echo $adminpw2;
 
-if ($adminun = $adminun2 && $adminpw = $adminpw2) 
+if ($adminun = $adminun2 && $adminpw = $adminpw2)
 {
    $_SESSION['adminun'] = $adminun2;
    $_SESSION['adminpw'] = $adminpw2;
-   
+
    echo 'You have entered valid username and password';
    header("Location: adminpage.php");
 }
-else 
+else
 {
-   echo 'Wrong username or password';
+   echo "<br><p style='background-color:rgba(255,0,0,0.5); width: 50%; text-align: center; color='red';'> <b>Wrong username or password!<br>Enter again! </b>";
 }
 }
 ?>
@@ -105,7 +105,7 @@ else
 	<p><center>011-1231235</center></p>
 </div>
 
-	
+
 
 </body>
 </html>
