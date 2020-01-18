@@ -506,13 +506,12 @@ body
 .button3
 {
 padding: 10px 6px;
-border: solid;
+color: white;
+border-radius:10px;
 padding-right:30px;
 display: inline-block;
-border-radius: 4px;
+border: 2px solid #1d5e05;
 background-color: #313193;
-border: none;
-  color: #FFFFFF;
 font-size: 14px;
 cursor: pointer;
 transition: 0.5s;
