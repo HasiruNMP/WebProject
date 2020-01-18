@@ -1,8 +1,8 @@
 <?php
 session_start();
-if ( isset( $_SESSION['adminpw'] ) ) 
+if ( isset( $_SESSION['adminpw'] ) )
 {}
-else 
+else
 {
 	//$_SESSION['current_page2'] = $_SERVER['REQUEST_URI'];
 	header("Location: adminlogin.php");
@@ -21,7 +21,7 @@ else
         <meta charset="utf-8">
         <title>Check orders </title>
     <link rel="shortcut icon" type="image/x-icon" href="../images/logo1.png" />
-    
+
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
     </head>
     <body>
@@ -36,7 +36,7 @@ else
             <img src="../images/nsbmlogo.png"style="width:310px;height: auto;" >
         </td>
     </tr>
-    
+
     </table>
 
     <div>
@@ -60,9 +60,9 @@ else
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+
         <script src="" async defer></script>
-        
+
         <?php
             $servername = "localhost";
             $username = "root";
@@ -86,14 +86,14 @@ else
             </tr>
             <tr>
                 <th>Product ID</th>
-                <td><input type="text" name="productid"></td>   
+                <td><input type="text" name="productid"></td>
             </tr>
             <tr>
                 <td colspan='2'><input class="button3" type="submit" name="Submit" value="Get colors"></td>
             </tr>
         </form>
         <form method="post" action="#">
-            
+
             <tr>
                 <th>Color</th>
                 <td>
@@ -114,7 +114,7 @@ else
                     if ($result->num_rows > 0) {
                     // output data of each row
                     while($row = $result->fetch_assoc()) {
-                
+
                     echo"<select name=\"color\">
                             <option value=\"null\">Choose Color</option>
                             <option value=\"".$row["Color1"]."\" style=\"background-color: ".$row["Color1"].";\";>'".$row["Color1"]."'</option>
@@ -129,7 +129,7 @@ else
 
                     //echo "<tr><td>" . $row["Color3"]. "</td><td>" . $row["Color1"] . "</td><td>"
                     //. $row["Color2"]. "</td></tr>";
-                    
+
                     ?>
                 </td>
             </tr>
@@ -140,14 +140,14 @@ else
             </tr>
             <tr>
                 <th>Size</th>
-                <td><input type="radio" name="size" value="S">S   
+                <td><input type="radio" name="size" value="S">S
                     <input type="radio" name="size" value="M">M
                     <input type="radio" name="size" value="L">L
                     <input type="radio" name="size" value="XL">XL
                     <input type="radio" name="size" value="XXL">XXL</td>
             </tr>
             <tr>
-                <td colspan=2><input class="button3" type="submit" name="submit" value="View Order Count"></td>
+                <td colspan=2><input class="button3" type="submit" name="submit" value="View Order Count"><button class="button3" style="vertical-align:middle" onclick="window.location.href='orders.php'"><span>New Count</span></button></td>
                 </form>
             </tr>
             <tr>
@@ -190,8 +190,10 @@ else
 
 
 
-                </th>  
+                </th>
             </tr>
+
+
 
 
 
@@ -205,7 +207,7 @@ else
     <p><center>tshirts@nsbm.com</center></p>
     <p><center>011-1231235</center></p>
 </div>
-        
+
 
 
     </body>
