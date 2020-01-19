@@ -52,19 +52,19 @@ else
 <div class="mySlides fade clearfix ">
   <div class="numbertext">1 / 3</div>
   <img src="images/1.jpg" style="width:1000px;height: 400px;">
-  <div class="text">Caption Text</div>
+  <div class="text">Theme One</div>
 </div>
 
 <div class="mySlides fade clearfix">
   <div class="numbertext">2 / 3</div>
   <img src="images/2.jpg" style="width:1000px;height: 400px;">
-  <div class="text">Caption Two</div>
+  <div class="text">Theme Two</div>
 </div>
 
 <div class="mySlides fade clearfix">
   <div class="numbertext">3 / 3</div>
   <img src="images/3.jpg" style="width:1000px;height:400px;">
-  <div class="text">Caption Three</div>
+  <div class="text">Theme Three</div>
 </div>
 
 </div>
