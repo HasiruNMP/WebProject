@@ -39,7 +39,7 @@
 		</center>
 		</td></tr>
 	</table>
-	<center><a href="../index.php">Customer Page</a></center>
+<center><button type="button"><a href="../index.php">Customer Page</a></button></center>
 	<div>
 
 
