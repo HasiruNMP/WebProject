@@ -29,7 +29,7 @@
 
         </table>
     </form>
-    <a href="../admin/adminlogin.php"> Admin Login </a>
+    <a href="../admin/adminlogin.php"><button type="button"> Admin Login</button> </a>
     
 
     <?php
