@@ -38,6 +38,7 @@ $db=mysqli_select_db($connection,"nsbmtshirts"); //selecting the database
 	$color4=$_REQUEST["color4"];
 	$price=$_REQUEST["price"];
 	$ContactNO=$_REQUEST["contno"];
+	$description=$_REQUEST["description"];
 
 
 
@@ -55,9 +56,49 @@ $query="INSERT INTO tshirts (Theme, prodID, Material, Color1, Color2, Color3, Co
  else
  	echo "error";
 
-
-
 ?>
+
+<table border="1" align="center">
+	<tr>
+		<td>Product ID:</td>	<td> <?php echo "$ProductID" ?> </td>
+	</tr>
+	<tr>
+		<td>Event/Theme:</td>	<td> <?php echo "$theme" ?> </td>
+	</tr>
+	<tr>
+		<td>Available Colours:</td>	
+		<td> 
+		<select name="color">
+			<option style="background-color:<?php echo "$color1" ?>; "> <?php echo "$color1" ?> </option>
+			<option style="background-color:<?php echo "$color2" ?>; "> <?php echo "$color2" ?> </option>
+			<option style="background-color:<?php echo "$color3" ?>; "> <?php echo "$$color3" ?> </option>
+			<option style="background-color:<?php echo "$color4" ?>; "> <?php echo "$$color4" ?> </option>
+			
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Available Materials:</td>	
+		<td>
+		
+		 <?php echo "$material"?> 
+		
+		</td>
+	</tr>
+	<tr>
+		<td>Price:</td>	<td> <?php echo "$price" ?> </td>
+	</tr>
+	<tr>
+		<td>Description:</td>	<td> <?php echo "$description" ?> </td>
+	</tr>
+	<tr>
+		<td>Contact Number:</td>	<td> <?php echo "$ContactNO" ?> </td>
+	</tr>
+
+
+
+
+</table>
 
 
 	
