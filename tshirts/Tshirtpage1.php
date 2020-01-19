@@ -173,7 +173,7 @@ img {vertical-align: middle;}
 	
 
 	<form name="tshirt_details" action="storingorderdetails.php"  method="POST">
-	<table id="tshirtdetails" border="0">
+	<table id="tshirtdetails" border="0" align="left">
 	<h2 id="themename"> <?php echo $row["Theme"]; ?></h2>
 	<hr>
 
@@ -259,28 +259,33 @@ img {vertical-align: middle;}
 	</div>
 
 	<div id="tleft">
+		<table border="0" align="right">
+			<tr><td>
 	<div class="slideshow-container">
 
 <div class="mySlides fade">
 
-  <img src="../images/black 2 front.jpg" style="width:500px" >
+  <img src="../images/black 2 front.jpg" style="width:500px;height:480px" >
   <div class="text">Front View</div>
 </div>
 
 <div class="mySlides fade">
 
-  <img src="../images/black 2 rear.jpg" style="width:500px">
+  <img src="../images/black 2 rear.jpg" style="width:500px;height:480px">
   <div class="text">Back View</div>
 </div>
 
 <div class="mySlides fade">
 
-  <img src="../images/black 2 left.jpg" style="width:500px">
+  <img src="../images/black 2 left.jpg" style="width:500px;height:480px">
   <div class="text">Side View</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</td>
+</tr>
+</table>
 
 </div>
 <br>
