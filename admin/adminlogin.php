@@ -92,7 +92,7 @@ if ($adminun = $adminun2 && $adminpw = $adminpw2)
 }
 else
 {
-   echo "<br><p style='background-color:rgba(255,0,0,0.5); width: 50%; text-align: center; color='red';'> <b>Wrong username or password!<br>Enter again! </b>";
+   echo '<script type="text/javascript">alert("You have entered an invalid username and/or password");</script>';
 }
 }
 ?>

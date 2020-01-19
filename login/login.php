@@ -30,7 +30,7 @@
         </table>
     </form>
     <a href="../admin/adminlogin.php"> Admin Login </a>
-    <br><br><br>
+    
 
     <?php
    ob_start();
@@ -81,7 +81,7 @@ if ($stuid = $stuid2 && $pass = $password2)
 }
 else
 {
-   echo "<br><p style='background-color:rgba(255,0,0,0.5); color='red';'> <b>Wrong username or password!<br>Enter again! </b>";
+   echo '<script type="text/javascript">alert("You have entered an invalid username and/or password");</script>';
 }
 }
 ?>

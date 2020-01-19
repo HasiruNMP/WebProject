@@ -111,7 +111,7 @@ else
 		</tr>
 		<tr>
 			<td>Upload an image of the side view of the T-shirt here:</td>
-			<td><input type="file" name="tback" id="tside" ></td>
+			<td><input type="file" name="tside" id="tside" ></td>
 		</tr>
 		<tr>
 			<td></td><td><input type="reset" name="reset" value="reset" class="reset"><input type="submit" name="submit" value="submit" class="submit" onclick="confirmdata()"></td>
@@ -120,6 +120,11 @@ else
 		</table>
 	
 </form>
+</div>
+<div id="contact" class="contact"><!--contacting options-->
+	<p ><u><center>Contact Us</center></u></p>
+	<p><center>tshirts@nsbm.com</center></p>
+	<p><center>011-1231235</center></p>
 </div>
 </body>
 </html>

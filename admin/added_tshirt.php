@@ -39,6 +39,9 @@ $db=mysqli_select_db($connection,"nsbmtshirts"); //selecting the database
 	$price=$_REQUEST["price"];
 	$ContactNO=$_REQUEST["contno"];
 	$description=$_REQUEST["description"];
+	$front=$_REQUEST["tfront"];
+	$back=$_REQUEST["tback"];
+	$side=$_REQUEST["tside"];
 
 
 
@@ -58,7 +61,7 @@ $query="INSERT INTO tshirts (Theme, prodID, Material, Color1, Color2, Color3, Co
 
 ?>
 
-<table border="1" align="center">
+<table border="1" align="center" style="width: 600px;height: auto;">
 	<tr>
 		<td>Product ID:</td>	<td> <?php echo "$ProductID" ?> </td>
 	</tr>
@@ -93,6 +96,15 @@ $query="INSERT INTO tshirts (Theme, prodID, Material, Color1, Color2, Color3, Co
 	</tr>
 	<tr>
 		<td>Contact Number:</td>	<td> <?php echo "$ContactNO" ?> </td>
+	</tr>
+	<tr>
+		<td>Front view:</td> <td style="background-image: url('../images/<?php echo "$front" ?>');background-size: 200px;background-repeat: no-repeat;height: 200px;">  </td>
+	</tr>
+	<tr>
+		<td>Back view:</td>	<td style="background-image: url('../images/<?php echo "$back" ?>');background-size: 200px;background-repeat: no-repeat;height: 200px;">  </td>
+	</tr>
+	<tr>
+		<td>Side view:</td>	<td style="background-image: url('../images/<?php echo "$side" ?>');background-size: 200px;background-repeat: no-repeat;height: 200px;">  </td>
 	</tr>
 
 
